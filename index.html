@@ -16,28 +16,38 @@
     </noscript>
   </head>
   <body>
-    <a class="skip-link" href="#main">Skip to content</a>
+    <a class="skip-link" href="#main" data-ui-label="skip">Skip to content</a>
 
     <header class="site-header">
-      <a class="brand" href="./" aria-label="Disaster Afterward legal center">
+      <a class="brand" href="./" aria-label="Disaster Afterward legal center" data-ui-aria-label="brand">
         <span class="brand-mark" aria-hidden="true">DA</span>
         <span>Disaster Afterward</span>
       </a>
-      <nav class="site-nav" aria-label="Primary navigation">
-        <a href="./" data-lang-link aria-current="page">Home</a>
-        <a href="./privacy/" data-lang-link>Privacy</a>
-        <a href="./terms/" data-lang-link>Terms</a>
+      <nav class="site-nav" aria-label="Primary navigation" data-ui-aria-label="primaryNav">
+        <a href="./" data-lang-link data-ui-label="home" aria-current="page">Home</a>
+        <a href="./privacy/" data-lang-link data-ui-label="privacy">Privacy</a>
+        <a href="./terms/" data-lang-link data-ui-label="terms">Terms</a>
       </nav>
     </header>
 
     <div class="shell">
       <div class="utility-bar">
-        <p class="eyebrow">Official legal information</p>
-        <nav class="language-switcher" aria-label="Language">
-          <a href="?lang=en" hreflang="en" data-lang-select="en">English</a>
-          <a href="?lang=ja" hreflang="ja" data-lang-select="ja">日本語</a>
-          <a href="?lang=zh-CN" hreflang="zh-CN" data-lang-select="zh-CN">简体中文</a>
-        </nav>
+        <p class="eyebrow" data-ui-label="legal">Official legal information</p>
+        <div class="language-switcher">
+          <label for="language-select" data-ui-label="language">Language</label>
+          <select id="language-select" data-lang-menu>
+            <option value="en" lang="en">English</option>
+            <option value="ja" lang="ja">日本語</option>
+            <option value="zh-CN" lang="zh-CN">简体中文</option>
+            <option value="zh-TW" lang="zh-TW">繁體中文</option>
+            <option value="ko-KR" lang="ko-KR">한국어</option>
+            <option value="fr-FR" lang="fr-FR">Français</option>
+            <option value="de-DE" lang="de-DE">Deutsch</option>
+            <option value="es" lang="es">Español</option>
+            <option value="pt-BR" lang="pt-BR">Português (Brasil)</option>
+            <option value="ru-RU" lang="ru-RU">Русский</option>
+          </select>
+        </div>
       </div>
 
       <main id="main" tabindex="-1">
@@ -203,15 +213,409 @@
             </div>
           </div>
         </section>
+        <section data-lang-panel="zh-TW" lang="zh-TW" hidden>
+          <div class="hero">
+            <div class="hero-copy">
+              <p class="eyebrow">法律資訊中心</p>
+              <h1 data-document-title>塵埃落定，規則清晰。</h1>
+              <p class="lede">
+                在此閱讀《Disaster Afterward》的正式隱私權政策與使用條款。
+                這些頁面以清楚易懂的方式說明目前版本的平台登入、本機存檔與選購項目。
+              </p>
+              <div class="status-row">
+                <span class="status">目前版本</span>
+                <span>2026 年 10 月 1 日生效</span>
+                <span>無廣告、無網站追蹤</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="card-grid" aria-label="法律文件">
+            <a class="card" href="./privacy/" data-lang-link>
+              <span class="card-kicker">您的資料</span>
+              <h2>隱私權政策</h2>
+              <p>
+                瞭解本遊戲處理哪些資訊、哪些資料會留在您的裝置上、平台服務供應商的角色，
+                以及您可如何管理自己的資料。
+              </p>
+              <span class="card-cta">閱讀隱私權政策 →</span>
+            </a>
+            <a class="card" href="./terms/" data-lang-link>
+              <span class="card-kicker">使用規則</span>
+              <h2>使用條款</h2>
+              <p>
+                瞭解軟體授權、平台帳號要求、本機存檔限制、應用程式內購買、
+                可接受的使用方式與消費者權益。
+              </p>
+              <span class="card-cta">閱讀使用條款 →</span>
+            </a>
+          </div>
+
+          <div class="trust-grid" aria-label="重點摘要">
+            <div class="trust-item">
+              <strong>以本機存檔為主</strong>
+              <span>目前版本會將遊戲進度儲存在您的裝置上。</span>
+            </div>
+            <div class="trust-item">
+              <strong>無開發者自建帳號</strong>
+              <span>登入使用 Game Center 或 Google Play Games。</span>
+            </div>
+            <div class="trust-item">
+              <strong>無行為式廣告</strong>
+              <span>目前版本不含廣告。</span>
+            </div>
+          </div>
+        </section>
+
+        <section data-lang-panel="ko-KR" lang="ko-KR" hidden>
+          <div class="hero">
+            <div class="hero-copy">
+              <p class="eyebrow">법률 정보 센터</p>
+              <h1 data-document-title>폐허 속에서도, 기준은 분명해야 합니다.</h1>
+              <p class="lede">
+                Disaster Afterward의 공식 개인정보처리방침과 이용약관을 확인하세요.
+                이 페이지에서는 현재 버전의 플랫폼 로그인, 로컬 저장 및 선택적 구매에
+                관한 내용을 알기 쉽게 설명합니다.
+              </p>
+              <div class="status-row">
+                <span class="status">현재 버전</span>
+                <span>2026년 10월 1일 시행</span>
+                <span>광고 및 웹사이트 추적 없음</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="card-grid" aria-label="법률 문서">
+            <a class="card" href="./privacy/" data-lang-link>
+              <span class="card-kicker">개인정보</span>
+              <h2>개인정보처리방침</h2>
+              <p>
+                게임이 처리하는 정보, 기기에 남는 정보, 플랫폼 제공업체의 역할 및
+                이용자가 선택할 수 있는 사항을 설명합니다.
+              </p>
+              <span class="card-cta">개인정보처리방침 보기 →</span>
+            </a>
+            <a class="card" href="./terms/" data-lang-link>
+              <span class="card-kicker">이용 규칙</span>
+              <h2>이용약관</h2>
+              <p>
+                라이선스, 플랫폼 계정 요건, 로컬 저장의 한계, 구매,
+                허용되는 이용 방식 및 소비자 보호에 대해 설명합니다.
+              </p>
+              <span class="card-cta">이용약관 보기 →</span>
+            </a>
+          </div>
+
+          <div class="trust-grid" aria-label="주요 내용">
+            <div class="trust-item">
+              <strong>기기 중심의 로컬 저장</strong>
+              <span>현재 버전은 게임 진행 상황을 이용자의 기기에 저장합니다.</span>
+            </div>
+            <div class="trust-item">
+              <strong>개발자 자체 계정 없음</strong>
+              <span>로그인에는 Game Center 또는 Google Play Games를 사용합니다.</span>
+            </div>
+            <div class="trust-item">
+              <strong>맞춤형 광고 없음</strong>
+              <span>현재 버전에는 광고가 포함되어 있지 않습니다.</span>
+            </div>
+          </div>
+        </section>
+
+        <section data-lang-panel="fr-FR" lang="fr-FR" hidden>
+          <div class="hero">
+            <div class="hero-copy">
+              <p class="eyebrow">Centre juridique</p>
+              <h1 data-document-title>Des règles claires, même après la catastrophe.</h1>
+              <p class="lede">
+                Consultez la politique de confidentialité et les conditions d’utilisation
+                officielles de Disaster Afterward. Ces pages décrivent en termes clairs
+                la version actuelle du Jeu, la connexion à la plateforme, les sauvegardes
+                locales et les achats facultatifs.
+              </p>
+              <div class="status-row">
+                <span class="status">Version actuelle</span>
+                <span>En vigueur le 1er octobre 2026</span>
+                <span>Aucune publicité ni aucun suivi sur le site</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="card-grid" aria-label="Documents juridiques">
+            <a class="card" href="./privacy/" data-lang-link>
+              <span class="card-kicker">Vos données</span>
+              <h2>Politique de confidentialité</h2>
+              <p>
+                Découvrez les informations traitées par le Jeu, celles qui restent
+                sur votre appareil, le rôle des fournisseurs de plateformes et les
+                choix dont vous disposez.
+              </p>
+              <span class="card-cta">Lire la politique →</span>
+            </a>
+            <a class="card" href="./terms/" data-lang-link>
+              <span class="card-kicker">Règles d’utilisation</span>
+              <h2>Conditions d’utilisation</h2>
+              <p>
+                Consultez la licence, les exigences relatives au compte de plateforme,
+                les limites des sauvegardes locales, les achats, les règles de conduite
+                et les protections des consommateurs.
+              </p>
+              <span class="card-cta">Lire les conditions →</span>
+            </a>
+          </div>
+
+          <div class="trust-grid" aria-label="En bref">
+            <div class="trust-item">
+              <strong>Sauvegardes locales</strong>
+              <span>La version actuelle conserve votre progression sur votre appareil.</span>
+            </div>
+            <div class="trust-item">
+              <strong>Aucun compte propre à l’éditeur</strong>
+              <span>La connexion s’effectue avec Game Center ou Google Play Games.</span>
+            </div>
+            <div class="trust-item">
+              <strong>Aucune publicité comportementale</strong>
+              <span>La version actuelle ne contient aucune publicité.</span>
+            </div>
+          </div>
+        </section>
+
+        <section data-lang-panel="de-DE" lang="de-DE" hidden>
+          <div class="hero">
+            <div class="hero-copy">
+              <p class="eyebrow">Rechtliches</p>
+              <h1 data-document-title>Klare Regeln, wenn sich der Staub gelegt hat.</h1>
+              <p class="lede">
+                Hier finden Sie die offizielle Datenschutzerklärung und die
+                Nutzungsbedingungen für Disaster Afterward. Diese Seiten erläutern
+                verständlich die aktuelle Spielversion, die Plattformanmeldung,
+                lokale Spielstände und optionale Käufe.
+              </p>
+              <div class="status-row">
+                <span class="status">Aktuelle Version</span>
+                <span>Gültig ab 1. Oktober 2026</span>
+                <span>Keine Werbung und kein Website-Tracking</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="card-grid" aria-label="Rechtliche Dokumente">
+            <a class="card" href="./privacy/" data-lang-link>
+              <span class="card-kicker">Ihre Daten</span>
+              <h2>Datenschutzerklärung</h2>
+              <p>
+                Erfahren Sie, welche Informationen das Spiel verarbeitet, welche
+                Daten auf Ihrem Gerät verbleiben, welche Rolle Plattformanbieter
+                spielen und welche Wahlmöglichkeiten Sie haben.
+              </p>
+              <span class="card-cta">Datenschutzerklärung lesen →</span>
+            </a>
+            <a class="card" href="./terms/" data-lang-link>
+              <span class="card-kicker">Nutzungsregeln</span>
+              <h2>Nutzungsbedingungen</h2>
+              <p>
+                Informationen zur Lizenz, zu Plattformkonten, lokalen Spielständen,
+                Käufen, zulässiger Nutzung und zum Verbraucherschutz.
+              </p>
+              <span class="card-cta">Nutzungsbedingungen lesen →</span>
+            </a>
+          </div>
+
+          <div class="trust-grid" aria-label="Auf einen Blick">
+            <div class="trust-item">
+              <strong>Lokale Spielstände</strong>
+              <span>Die aktuelle Version speichert den Spielfortschritt auf Ihrem Gerät.</span>
+            </div>
+            <div class="trust-item">
+              <strong>Kein Entwicklerkonto</strong>
+              <span>Die Anmeldung erfolgt über Game Center oder Google Play Games.</span>
+            </div>
+            <div class="trust-item">
+              <strong>Keine verhaltensbezogene Werbung</strong>
+              <span>Die aktuelle Version enthält keine Werbung.</span>
+            </div>
+          </div>
+        </section>
+
+        <section data-lang-panel="es" lang="es" hidden>
+          <div class="hero">
+            <div class="hero-copy">
+              <p class="eyebrow">Centro legal</p>
+              <h1 data-document-title>Claridad después de que se asiente el polvo.</h1>
+              <p class="lede">
+                Consulte la política de privacidad y las condiciones de uso oficiales de
+                Disaster Afterward. Estas páginas explican de forma clara la versión
+                actual del juego, el inicio de sesión en la plataforma, las partidas
+                guardadas localmente y las compras opcionales.
+              </p>
+              <div class="status-row">
+                <span class="status">Versión actual</span>
+                <span>Vigente desde el 1 de octubre de 2026</span>
+                <span>Sin publicidad ni rastreo web</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="card-grid" aria-label="Documentos legales">
+            <a class="card" href="./privacy/" data-lang-link>
+              <span class="card-kicker">Sus datos</span>
+              <h2>Política de privacidad</h2>
+              <p>
+                Qué información procesa el Juego, qué permanece en su dispositivo,
+                cómo intervienen los proveedores de plataforma y qué opciones tiene.
+              </p>
+              <span class="card-cta">Leer la política →</span>
+            </a>
+            <a class="card" href="./terms/" data-lang-link>
+              <span class="card-kicker">Normas de uso</span>
+              <h2>Condiciones de uso</h2>
+              <p>
+                La licencia, los requisitos de la cuenta de plataforma, los límites
+                de las partidas locales, las compras, el uso aceptable y la
+                protección del consumidor.
+              </p>
+              <span class="card-cta">Leer las condiciones →</span>
+            </a>
+          </div>
+
+          <div class="trust-grid" aria-label="Resumen">
+            <div class="trust-item">
+              <strong>Partidas guardadas localmente</strong>
+              <span>La versión actual guarda el progreso en su dispositivo.</span>
+            </div>
+            <div class="trust-item">
+              <strong>Sin cuenta del desarrollador</strong>
+              <span>El inicio de sesión utiliza Game Center o Google Play Games.</span>
+            </div>
+            <div class="trust-item">
+              <strong>Sin publicidad conductual</strong>
+              <span>La versión actual no incluye publicidad.</span>
+            </div>
+          </div>
+        </section>
+
+        <section data-lang-panel="pt-BR" lang="pt-BR" hidden>
+          <div class="hero">
+            <div class="hero-copy">
+              <p class="eyebrow">Central jurídica</p>
+              <h1 data-document-title>Clareza depois que a poeira baixa.</h1>
+              <p class="lede">
+                Consulte a política de privacidade e os termos de uso oficiais do
+                Disaster Afterward. Estas páginas explicam em linguagem clara a
+                versão atual do jogo, o login pela plataforma, os dados salvos
+                localmente e as compras opcionais.
+              </p>
+              <div class="status-row">
+                <span class="status">Versão atual</span>
+                <span>Em vigor desde 1º de outubro de 2026</span>
+                <span>Sem publicidade ou rastreamento no site</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="card-grid" aria-label="Documentos jurídicos">
+            <a class="card" href="./privacy/" data-lang-link>
+              <span class="card-kicker">Seus dados</span>
+              <h2>Política de Privacidade</h2>
+              <p>
+                Quais informações o Jogo processa, o que permanece no seu dispositivo,
+                como os provedores de plataforma participam e quais são as suas opções.
+              </p>
+              <span class="card-cta">Ler a política →</span>
+            </a>
+            <a class="card" href="./terms/" data-lang-link>
+              <span class="card-kicker">Regras de uso</span>
+              <h2>Termos de Uso</h2>
+              <p>
+                A licença, os requisitos da conta da plataforma, as limitações dos
+                dados salvos localmente, as compras, o uso aceitável e a proteção
+                ao consumidor.
+              </p>
+              <span class="card-cta">Ler os termos →</span>
+            </a>
+          </div>
+
+          <div class="trust-grid" aria-label="Resumo">
+            <div class="trust-item">
+              <strong>Dados salvos localmente</strong>
+              <span>A versão atual armazena o progresso no seu dispositivo.</span>
+            </div>
+            <div class="trust-item">
+              <strong>Sem conta do desenvolvedor</strong>
+              <span>O login utiliza o Game Center ou o Google Play Games.</span>
+            </div>
+            <div class="trust-item">
+              <strong>Sem anúncios comportamentais</strong>
+              <span>A versão atual não inclui publicidade.</span>
+            </div>
+          </div>
+        </section>
+
+        <section data-lang-panel="ru-RU" lang="ru-RU" hidden>
+          <div class="hero">
+            <div class="hero-copy">
+              <p class="eyebrow">Юридический центр</p>
+              <h1 data-document-title>Чёткие правила после того, как уляжется пыль.</h1>
+              <p class="lede">
+                Здесь опубликованы официальные Политика конфиденциальности и Условия
+                использования Disaster Afterward. В них простым языком описаны вход
+                через платформу, локальные сохранения и необязательные покупки в
+                текущей версии игры.
+              </p>
+              <div class="status-row">
+                <span class="status">Текущая версия</span>
+                <span>Действует с 1 октября 2026 г.</span>
+                <span>Без рекламы и отслеживания на сайте</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="card-grid" aria-label="Юридические документы">
+            <a class="card" href="./privacy/" data-lang-link>
+              <span class="card-kicker">Ваши данные</span>
+              <h2>Политика конфиденциальности</h2>
+              <p>
+                Какие сведения обрабатывает Игра, что остаётся на вашем устройстве,
+                как участвуют поставщики платформ и какие возможности выбора у вас есть.
+              </p>
+              <span class="card-cta">Читать Политику →</span>
+            </a>
+            <a class="card" href="./terms/" data-lang-link>
+              <span class="card-kicker">Правила использования</span>
+              <h2>Условия использования</h2>
+              <p>
+                Лицензия, требования к учётной записи платформы, ограничения
+                локальных сохранений, покупки, допустимое использование и защита
+                прав потребителей.
+              </p>
+              <span class="card-cta">Читать Условия →</span>
+            </a>
+          </div>
+
+          <div class="trust-grid" aria-label="Кратко о главном">
+            <div class="trust-item">
+              <strong>Локальные сохранения</strong>
+              <span>В текущей версии прогресс хранится на вашем устройстве.</span>
+            </div>
+            <div class="trust-item">
+              <strong>Без отдельной учётной записи</strong>
+              <span>Для входа используются Game Center или Google Play Games.</span>
+            </div>
+            <div class="trust-item">
+              <strong>Без поведенческой рекламы</strong>
+              <span>Текущая версия не содержит рекламы.</span>
+            </div>
+          </div>
+        </section>
       </main>
     </div>
 
     <footer class="site-footer">
       <p>© 2026 JimmyLai1989. Disaster Afterward.</p>
-      <nav class="footer-links" aria-label="Footer navigation">
-        <a href="./privacy/" data-lang-link>Privacy</a>
-        <a href="./terms/" data-lang-link>Terms</a>
-        <a href="https://github.com/JimmyLai1989/disaster-afterward-legal/issues/new">Contact</a>
+      <nav class="footer-links" aria-label="Footer navigation" data-ui-aria-label="footerNav">
+        <a href="./privacy/" data-lang-link data-ui-label="privacy">Privacy</a>
+        <a href="./terms/" data-lang-link data-ui-label="terms">Terms</a>
+        <a href="https://github.com/JimmyLai1989/disaster-afterward-legal/issues/new" data-ui-label="contact">Contact</a>
       </nav>
     </footer>
 

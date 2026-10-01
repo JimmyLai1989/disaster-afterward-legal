@@ -16,28 +16,38 @@
     </noscript>
   </head>
   <body>
-    <a class="skip-link" href="#main">Skip to content</a>
+    <a class="skip-link" href="#main" data-ui-label="skip">Skip to content</a>
 
     <header class="site-header">
-      <a class="brand" href="../" data-lang-link aria-label="Disaster Afterward legal center">
+      <a class="brand" href="../" data-lang-link aria-label="Disaster Afterward legal center" data-ui-aria-label="brand">
         <span class="brand-mark" aria-hidden="true">DA</span>
         <span>Disaster Afterward</span>
       </a>
-      <nav class="site-nav" aria-label="Primary navigation">
-        <a href="../" data-lang-link>Home</a>
-        <a href="./" data-lang-link aria-current="page">Privacy</a>
-        <a href="../terms/" data-lang-link>Terms</a>
+      <nav class="site-nav" aria-label="Primary navigation" data-ui-aria-label="primaryNav">
+        <a href="../" data-lang-link data-ui-label="home">Home</a>
+        <a href="./" data-lang-link data-ui-label="privacy" aria-current="page">Privacy</a>
+        <a href="../terms/" data-lang-link data-ui-label="terms">Terms</a>
       </nav>
     </header>
 
     <div class="shell">
       <div class="utility-bar">
-        <p class="eyebrow">Privacy Policy</p>
-        <nav class="language-switcher" aria-label="Language">
-          <a href="?lang=en" hreflang="en" data-lang-select="en">English</a>
-          <a href="?lang=ja" hreflang="ja" data-lang-select="ja">日本語</a>
-          <a href="?lang=zh-CN" hreflang="zh-CN" data-lang-select="zh-CN">简体中文</a>
-        </nav>
+        <p class="eyebrow" data-ui-label="privacyPage">Privacy Policy</p>
+        <div class="language-switcher">
+          <label for="language-select" data-ui-label="language">Language</label>
+          <select id="language-select" data-lang-menu>
+            <option value="en" lang="en">English</option>
+            <option value="ja" lang="ja">日本語</option>
+            <option value="zh-CN" lang="zh-CN">简体中文</option>
+            <option value="zh-TW" lang="zh-TW">繁體中文</option>
+            <option value="ko-KR" lang="ko-KR">한국어</option>
+            <option value="fr-FR" lang="fr-FR">Français</option>
+            <option value="de-DE" lang="de-DE">Deutsch</option>
+            <option value="es" lang="es">Español</option>
+            <option value="pt-BR" lang="pt-BR">Português (Brasil)</option>
+            <option value="ru-RU" lang="ru-RU">Русский</option>
+          </select>
+        </div>
       </div>
 
       <main id="main" class="legal-layout" tabindex="-1">
@@ -737,15 +747,1939 @@
             </p>
           </div>
         </article>
+        <article class="legal-document" data-lang-panel="zh-TW" lang="zh-TW" hidden>
+          <header>
+            <p class="eyebrow">Disaster Afterward</p>
+            <h1 class="legal-title" data-document-title>隱私權政策</h1>
+            <p class="lede">
+              本政策說明目前版本會處理哪些資訊、資訊的儲存位置，
+              以及涉及哪些平台服務供應商。
+            </p>
+            <div class="meta-line">
+              <span><strong>生效日期：</strong>2026 年 10 月 1 日</span>
+              <span><strong>發行者：</strong>JimmyLai1989</span>
+            </div>
+          </header>
+
+          <div class="notice">
+            目前版本不會建立獨立的 Disaster Afterward 伺服器帳號、不會將遊戲存檔上傳至
+            開發者營運的伺服器、不會顯示廣告，也不會向我們傳送遊戲分析資料。
+          </div>
+
+          <nav class="contents" aria-label="隱私權政策目錄">
+            <strong>目錄</strong>
+            <ol>
+              <li><a href="#zhtw-scope">適用範圍</a></li>
+              <li><a href="#zhtw-data">處理的資訊</a></li>
+              <li><a href="#zhtw-use">資訊的使用方式</a></li>
+              <li><a href="#zhtw-sharing">第三方與資訊分享</a></li>
+              <li><a href="#zhtw-retention">保存與刪除</a></li>
+              <li><a href="#zhtw-rights">您的選擇與權利</a></li>
+              <li><a href="#zhtw-security">安全與跨境處理</a></li>
+              <li><a href="#zhtw-children">兒童隱私</a></li>
+              <li><a href="#zhtw-changes">政策變更</a></li>
+              <li><a href="#zhtw-contact">聯絡方式</a></li>
+            </ol>
+          </nav>
+
+          <h2 id="zhtw-scope">1. 適用範圍與營運者</h2>
+          <p>
+            JimmyLai1989（以下稱「我們」）發行 Disaster Afterward（以下稱「本遊戲」）
+            並營運本法律資訊網站。本政策適用於本遊戲、我們提供的支援服務及這些法律資訊頁面。
+            Apple、Google、Unity 或 GitHub 獨立提供的服務，亦分別受該等服務供應商的政策規範。
+          </p>
+
+          <h2 id="zhtw-data">2. 本遊戲處理的資訊</h2>
+          <h3>2.1 平台登入</h3>
+          <p>
+            本遊戲不提供訪客模式。在支援的裝置上，iOS 版使用 Apple Game Center 登入，
+            Android 版使用 Google Play Games 登入。本遊戲可能處理平台類型、平台玩家識別碼、
+            顯示名稱、驗證狀態、登入時間及登入錯誤資訊。平台識別碼可能會在您的裝置上經單向雜湊，
+            用作穩定的遊戲識別碼。
+          </p>
+          <p>
+            這些資訊用於驗證存取權限，以及將本機遊戲狀態與已登入的平台身分建立關聯。
+            我們不會取得您的 Apple ID 密碼、Google 帳戶密碼或完整的平台憑證。
+            目前版本不會將此身分資訊傳送至開發者營運的玩家資料庫。
+          </p>
+
+          <h3>2.2 遊戲與本機存檔資料</h3>
+          <p>
+            本遊戲會在您的裝置上儲存遊戲進度、設定、物品欄、隊伍資訊、權益狀態，
+            以及執行本遊戲所需的其他資訊。目前版本使用本機存檔，
+            不提供由開發者營運的雲端存檔服務。
+          </p>
+          <p>
+            您的作業系統可能會依照您的設定，將應用程式資料納入裝置或系統備份。
+            此類備份由 Apple 或 Google 控制，而非由我們控制。
+          </p>
+
+          <h3>2.3 應用程式內購買</h3>
+          <p>
+            選購項目由 Apple App Store 或 Google Play 處理。目前的遊戲實作可能會處理
+            產品識別碼、當地語系產品資訊、購買狀態、交易或訂單資訊、收據或購買權杖，
+            以及由此產生並儲存在您裝置上的權益狀態。目前設定的產品為一次性購買、
+            非消耗型的進階版解鎖項目。
+          </p>
+          <p>
+            付款與退款由 Apple 或 Google 處理。我們不會取得您的完整信用卡號或銀行帳戶憑證。
+            目前版本不會營運獨立伺服器來儲存或驗證收據。
+          </p>
+
+          <h3>2.4 分析、診斷與廣告</h3>
+          <p>
+            目前版本所使用的分析功能已停用，且不執行任何作業。該功能不會刻意向我們或外部
+            分析服務供應商傳送遊戲事件，本遊戲亦未整合第三方廣告。我們不會使用廣告識別碼
+            進行追蹤，也不會出售個人資訊。
+          </p>
+          <p>
+            Apple、Google、應用程式商店、作業系統或其平台服務，可能會依照您的設定及其自身政策，
+            獨立蒐集效能、安全、購買或診斷資訊。此類平台層級的活動不受我們控制。
+          </p>
+
+          <h3>2.5 支援通訊</h3>
+          <p>
+            若您與我們聯絡，我們會處理您選擇提供的資訊，例如問題說明、回覆方式、螢幕截圖、
+            裝置或遊戲資訊及回覆紀錄，以回答並解決您的請求。
+          </p>
+          <p>
+            我們目前的聯絡管道是公開的 GitHub Issues 頁面。請勿在該處張貼密碼、信用卡資料、
+            政府核發的識別資訊、非公開收據或其他敏感資訊。您可以僅建立一則簡短的 issue，
+            請求我們安排適當的後續聯絡管道。
+          </p>
+
+          <h3>2.6 造訪本網站</h3>
+          <p>
+            本網站由 GitHub Pages 託管。GitHub 可能會處理 IP 位址、瀏覽器資訊、存取時間，
+            以及保護並提供網站所需的例行技術記錄。我們不會加入 Cookie、本機儲存追蹤、
+            廣告像素、遠端字型或行為分析。語言選擇器只使用網址查詢參數與您的瀏覽器語言。
+          </p>
+
+          <h2 id="zhtw-use">3. 資訊的使用方式</h2>
+          <p>我們僅在合理必要的範圍內處理資訊，以便：</p>
+          <ul>
+            <li>透過支援的平台完成驗證並執行本遊戲；</li>
+            <li>儲存本機遊戲進度與設定；</li>
+            <li>提供、驗證及恢復已購買的內容；</li>
+            <li>回覆支援請求並解決技術問題；</li>
+            <li>保護本遊戲、防止詐欺或濫用並遵守法律；以及</li>
+            <li>執行本政策與使用條款。</li>
+          </ul>
+          <p>
+            若法律要求具備合法處理依據，我們將視情況以履行我們與您之間的契約、營運及維護本遊戲
+            安全之正當利益、您的同意，或遵守法定義務為處理依據。我們不會僅依據自動化處理作出對您產生
+            法律效果或類似重大影響的決定。
+          </p>
+
+          <h2 id="zhtw-sharing">4. 第三方與資訊分享</h2>
+          <p>
+            我們不會出售個人資訊，也不會為跨情境行為式廣告分享個人資訊。
+            視您的裝置與操作而定，資訊可能由下列服務供應商處理：
+          </p>
+          <ul>
+            <li>
+              <strong>Apple Inc.</strong>：提供 Game Center、App Store、應用程式內購買、
+              裝置備份與平台服務。
+            </li>
+            <li>
+              <strong>Google LLC.</strong>：提供 Google Play Games、Google Play、
+              應用程式內購買、裝置備份與平台服務。
+            </li>
+            <li>
+              <strong>Unity Technologies.</strong>：提供遊戲引擎及應用程式內購買的技術整合層。
+            </li>
+            <li>
+              <strong>GitHub, Inc.</strong>：託管本網站及公開的支援管道。
+            </li>
+          </ul>
+          <p>
+            我們亦可能在法律要求、回應有效的法律請求、保護權利或安全、取得您的同意，
+            或進行合法業務移轉時揭露資訊。
+          </p>
+          <p>
+            服務供應商政策：
+            <a href="https://www.apple.com/legal/privacy/">Apple</a>、
+            <a href="https://policies.google.com/privacy">Google</a>、
+            <a href="https://unity.com/legal/privacy-policy">Unity</a>，以及
+            <a href="https://docs.github.com/site-policy/privacy-policies/github-general-privacy-statement">GitHub</a>。
+          </p>
+
+          <h2 id="zhtw-retention">5. 保存與刪除</h2>
+          <ul>
+            <li>
+              本機遊戲資料會保留在裝置上，直到資料遭重設、清除、隨本遊戲移除，
+              或因更換或重設裝置而遺失。
+            </li>
+            <li>
+              購買權益資訊會在提供購買內容所需的期間保留於本機，並可能從商店恢復。
+              Apple 與 Google 會依其自身政策保存交易紀錄。
+            </li>
+            <li>
+              平台帳號與備份資料由相關服務供應商依其政策及您的設定保存。
+            </li>
+            <li>
+              公開支援 issue 會保留於 GitHub，直到遭移除或依 GitHub 的保存作法另行處理。
+            </li>
+          </ul>
+          <p>
+            目前版本不會建立可由我們刪除的獨立 Disaster Afterward 帳號或伺服器端玩家資料。
+            若要移除本機資料，請使用本遊戲的重設功能（若有）、透過作業系統清除應用程式資料，
+            或解除安裝本遊戲。解除安裝不會刪除您的 Apple 或 Google 帳戶、交易紀錄或平台備份；
+            請透過相關服務供應商管理這些資料。
+          </p>
+
+          <h2 id="zhtw-rights">6. 您的選擇與權利</h2>
+          <p>
+            視您的居住地而定，您可能有權存取、更正、刪除或限制個人資料，反對特定處理、
+            取得可攜式資料、撤回同意，或向主管機關提出申訴。由於我們目前並未持有由開發者
+            營運的玩家資料庫，許多請求會涉及由 Apple、Google 或 GitHub 持有的資訊，
+            並應向相應的服務供應商提出。
+          </p>
+          <p>
+            若要提出隱私問題或行使與我們所控制資訊相關的權利，請使用下方聯絡管道。
+            我們可能需要足以驗證並回覆請求的資訊，且在法律要求時可能保留有限紀錄。
+          </p>
+
+          <h2 id="zhtw-security">7. 安全與跨境處理</h2>
+          <p>
+            我們會依資訊的性質與風險採取合理的安全措施，但任何電子儲存或傳輸方式都無法保證
+            絕對安全。Apple、Google、Unity 與 GitHub 可能依其政策及適用的跨境傳輸保護措施，
+            在您所在國家或地區以外處理資訊。
+          </p>
+
+          <h2 id="zhtw-children">8. 兒童隱私</h2>
+          <p>
+            本遊戲並非以依其所在地法律、須經父母授權方得同意處理其個人資料的兒童為主要對象。
+            若父母或監護人認為兒童未經必要授權即向我們提供個人資訊，可與我們聯絡，
+            以便我們採取適當措施。
+          </p>
+
+          <h2 id="zhtw-changes">9. 本政策的變更</h2>
+          <p>
+            當本遊戲、服務供應商或法律要求有所變更時，我們可能更新本政策。重大變更將透過本網站、
+            本遊戲或其他適當管道通知。上方生效日期表示目前版本。在啟用分析、廣告、雲端存檔或
+            開發者營運的帳號服務之前，我們將更新本政策及相關商店揭露事項。
+          </p>
+
+          <h2 id="zhtw-contact">10. 聯絡方式</h2>
+          <div class="contact-panel">
+            <p><strong>發行者：</strong>JimmyLai1989</p>
+            <p>
+              <strong>隱私與支援：</strong>
+              <a href="https://github.com/JimmyLai1989/disaster-afterward-legal/issues/new?title=Privacy%20or%20support%20request">建立 GitHub issue</a>
+            </p>
+            <p>
+              GitHub Issues 是公開的。請僅提供最低限度的必要資訊，
+              並且不要包含敏感的個人資料或付款資料。
+            </p>
+          </div>
+        </article>
+
+        <article class="legal-document" data-lang-panel="ko-KR" lang="ko-KR" hidden>
+          <header>
+            <p class="eyebrow">Disaster Afterward</p>
+            <h1 class="legal-title" data-document-title>개인정보처리방침</h1>
+            <p class="lede">
+              본 방침은 현재 버전에서 처리하는 정보, 해당 정보의 보관 위치 및
+              관련 플랫폼 제공업체를 설명합니다.
+            </p>
+            <div class="meta-line">
+              <span><strong>시행일:</strong> 2026년 10월 1일</span>
+              <span><strong>배급자:</strong> JimmyLai1989</span>
+            </div>
+          </header>
+
+          <div class="notice">
+            현재 버전은 별도의 Disaster Afterward 서버 계정을 생성하거나,
+            게임 저장 데이터를 개발자가 운영하는 서버로 업로드하거나, 광고를 표시하거나,
+            게임 플레이 분석 정보를 당사로 전송하지 않습니다.
+          </div>
+
+          <nav class="contents" aria-label="개인정보처리방침 목차">
+            <strong>목차</strong>
+            <ol>
+              <li><a href="#ko-scope">적용 범위</a></li>
+              <li><a href="#ko-data">처리하는 정보</a></li>
+              <li><a href="#ko-use">정보 이용 목적</a></li>
+              <li><a href="#ko-sharing">제3자 및 정보 공유</a></li>
+              <li><a href="#ko-retention">보유 및 삭제</a></li>
+              <li><a href="#ko-rights">이용자의 선택 및 권리</a></li>
+              <li><a href="#ko-security">보안 및 국외 처리</a></li>
+              <li><a href="#ko-children">아동의 개인정보</a></li>
+              <li><a href="#ko-changes">방침 변경</a></li>
+              <li><a href="#ko-contact">문의</a></li>
+            </ol>
+          </nav>
+
+          <h2 id="ko-scope">1. 적용 범위 및 운영 주체</h2>
+          <p>
+            JimmyLai1989(이하 “당사”)는 Disaster Afterward(이하 “게임”)와
+            본 법률 정보 웹사이트를 배급·운영합니다. 본 방침은 게임, 당사가 제공하는 지원 및
+            본 법률 정보 페이지에 적용됩니다. Apple, Google, Unity 또는 GitHub가 독립적으로
+            제공하는 서비스에는 각 제공업체의 방침도 적용됩니다.
+          </p>
+
+          <h2 id="ko-data">2. 게임이 처리하는 정보</h2>
+          <h3>2.1 플랫폼 로그인</h3>
+          <p>
+            게임은 게스트 모드를 제공하지 않습니다. 지원되는 기기에서는 iOS의 Apple Game Center
+            또는 Android의 Google Play Games를 통해 로그인합니다. 게임은 플랫폼 유형,
+            플랫폼 플레이어 식별자, 표시 이름, 인증 상태, 로그인 시각 및 로그인 오류 정보를
+            처리할 수 있습니다. 기기에서 일관되게 유지되는 게임 식별자로 사용하기 위해 플랫폼
+            식별자의 단방향 해시값이 생성될 수 있습니다.
+          </p>
+          <p>
+            이 정보는 접근 권한을 인증하고 로컬 게임 상태를 로그인한 플랫폼 계정과 연결하는 데
+            사용됩니다. 당사는 이용자의 Apple ID 비밀번호, Google 계정 비밀번호 또는 완전한
+            플랫폼 인증 정보를 제공받지 않습니다. 현재 버전은 이러한 신원 정보를 개발자가 운영하는
+            플레이어 데이터베이스로 전송하지 않습니다.
+          </p>
+
+          <h3>2.2 게임 플레이 및 로컬 저장 데이터</h3>
+          <p>
+            게임은 진행 상황, 설정, 보유 아이템, 캐릭터 명단 정보, 이용 권한 상태 및 게임 실행에
+            필요한 기타 정보를 이용자의 기기에 저장합니다. 현재 버전은 로컬 저장 방식을 사용하며,
+            개발자가 운영하는 클라우드 저장 서비스를 제공하지 않습니다.
+          </p>
+          <p>
+            이용자의 설정에 따라 운영체제가 앱 데이터를 기기 또는 시스템 백업에 포함할 수 있습니다.
+            이러한 백업은 당사가 아닌 Apple 또는 Google이 관리합니다.
+          </p>
+
+          <h3>2.3 인앱 구매</h3>
+          <p>
+            선택적 구매는 Apple App Store 또는 Google Play에서 처리됩니다. 현재 게임 구현은
+            제품 식별자, 현지화된 제품 정보, 구매 상태, 거래 또는 주문 정보, 영수증 또는 구매 토큰,
+            그리고 그에 따른 기기 내 이용 권한 상태를 처리할 수 있습니다. 현재 설정된 제품은
+            일회성 비소모성 프리미엄 잠금 해제 상품입니다.
+          </p>
+          <p>
+            결제와 환불은 Apple 또는 Google이 처리합니다. 당사는 이용자의 전체 카드 번호나
+            은행 계좌 인증 정보를 제공받지 않습니다. 현재 버전은 영수증 저장 또는 검증을 위한
+            별도의 서버를 운영하지 않습니다.
+          </p>
+
+          <h3>2.4 분석, 진단 및 광고</h3>
+          <p>
+            현재 버전의 분석 기능은 비활성화되어 실제로 동작하지 않습니다. 게임 플레이 이벤트를
+            당사 또는 외부 분석 제공업체에 의도적으로 전송하지 않으며, 제3자 광고를 통합하지
+            않습니다. 당사는 추적 목적으로 광고 식별자를 사용하지 않으며 개인정보를 판매하지 않습니다.
+          </p>
+          <p>
+            Apple, Google, 앱 스토어, 운영체제 또는 각 플랫폼 서비스는 이용자의 설정과 자체 방침에
+            따라 성능, 보안, 구매 또는 진단 정보를 독립적으로 수집할 수 있습니다. 이러한 플랫폼
+            차원의 활동은 당사가 관리하지 않습니다.
+          </p>
+
+          <h3>2.5 지원 관련 연락</h3>
+          <p>
+            이용자가 당사에 문의하는 경우, 당사는 문의에 답변하고 문제를 해결하기 위해 이용자가
+            직접 제공한 정보(예: 문제 설명, 답변을 받을 방법, 스크린샷, 기기 또는 게임 정보,
+            답변 이력)를 처리합니다.
+          </p>
+          <p>
+            현재 문의 채널은 공개 GitHub Issues 페이지입니다. 비밀번호, 결제 카드 정보,
+            정부 발급 식별번호, 비공개 영수증 또는 기타 민감한 정보를 게시하지 마십시오.
+            적절한 후속 연락 방법을 마련해 달라는 최소한의 내용만으로 이슈를 등록할 수 있습니다.
+          </p>
+
+          <h3>2.6 본 웹사이트 방문</h3>
+          <p>
+            본 사이트는 GitHub Pages에서 호스팅됩니다. GitHub는 사이트를 안전하게 제공하는 데 필요한
+            IP 주소, 브라우저 정보, 접속 시각 및 통상적인 기술 로그를 처리할 수 있습니다. 당사는
+            쿠키, 로컬 스토리지 추적, 광고 픽셀, 원격 글꼴 또는 행동 분석 기능을 추가하지 않습니다.
+            언어 선택 기능은 URL 쿼리 매개변수와 브라우저 언어만 사용합니다.
+          </p>
+
+          <h2 id="ko-use">3. 정보 이용 목적</h2>
+          <p>정보는 다음 목적에 합리적으로 필요한 범위에서만 처리됩니다.</p>
+          <ul>
+            <li>지원되는 플랫폼을 통한 인증 및 게임 운영</li>
+            <li>로컬 진행 상황 및 설정 저장</li>
+            <li>구매 콘텐츠의 제공, 확인 및 복원</li>
+            <li>지원 요청 응대 및 기술적 문제 해결</li>
+            <li>게임 보호, 사기 또는 오용 방지 및 법적 의무 준수</li>
+            <li>본 방침 및 이용약관의 집행</li>
+          </ul>
+          <p>
+            법적 근거가 필요한 경우, 정보 처리는 해당 상황에 따라 당사 계약의 이행, 게임 운영 및
+            보안에 관한 정당한 이익, 이용자의 동의 또는 법적 의무의 준수에 근거합니다. 당사는 법적
+            효과 또는 이와 유사하게 중대한 효과를 초래하는 결정을 자동화된 처리만으로 내리지 않습니다.
+          </p>
+
+          <h2 id="ko-sharing">4. 제3자 및 정보 공유</h2>
+          <p>
+            당사는 개인정보를 판매하거나 서로 다른 맥락을 아우르는 맞춤형 광고를 위해 공유하지
+            않습니다. 이용자의 기기 및 이용 행위에 따라 다음 업체가 정보를 처리할 수 있습니다.
+          </p>
+          <ul>
+            <li>
+              <strong>Apple Inc.</strong>: Game Center, App Store, 인앱 구매,
+              기기 백업 및 플랫폼 서비스 제공
+            </li>
+            <li>
+              <strong>Google LLC.</strong>: Google Play Games, Google Play,
+              인앱 구매, 기기 백업 및 플랫폼 서비스 제공
+            </li>
+            <li>
+              <strong>Unity Technologies.</strong>: 게임 엔진 및 기술적 인앱 구매
+              통합 계층 제공
+            </li>
+            <li>
+              <strong>GitHub, Inc.</strong>: 본 웹사이트 및 공개 지원 채널 호스팅
+            </li>
+          </ul>
+          <p>
+            또한 당사는 법률상 요구되는 경우, 유효한 법적 요청에 대응하기 위해, 권리 또는 안전을
+            보호하기 위해, 이용자의 동의를 받은 경우 또는 적법한 사업 양도의 일부로 정보를 공개할
+            수 있습니다.
+          </p>
+          <p>
+            제공업체별 방침:
+            <a href="https://www.apple.com/legal/privacy/">Apple</a>,
+            <a href="https://policies.google.com/privacy">Google</a>,
+            <a href="https://unity.com/legal/privacy-policy">Unity</a>,
+            <a href="https://docs.github.com/site-policy/privacy-policies/github-general-privacy-statement">GitHub</a>.
+          </p>
+
+          <h2 id="ko-retention">5. 보유 및 삭제</h2>
+          <ul>
+            <li>
+              로컬 게임 데이터는 초기화 또는 삭제되거나, 게임과 함께 제거되거나,
+              기기 변경 또는 초기화로 소실될 때까지 기기에 남아 있습니다.
+            </li>
+            <li>
+              구매 이용 권한 정보는 구매 상품을 제공하는 데 필요한 기간 동안 로컬에 남으며,
+              스토어에서 복원될 수 있습니다. Apple과 Google은 자체 방침에 따라 거래 기록을 보관합니다.
+            </li>
+            <li>
+              플랫폼 계정 및 백업 데이터는 해당 제공업체의 방침과 이용자 설정에 따라 보관됩니다.
+            </li>
+            <li>
+              공개 지원 이슈는 삭제되거나 GitHub의 보유 관행에 따라 달리 처리될 때까지 GitHub에
+              남아 있습니다.
+            </li>
+          </ul>
+          <p>
+            현재 버전은 당사가 삭제할 수 있는 별도의 Disaster Afterward 계정이나 서버 측 플레이어
+            프로필을 생성하지 않습니다. 로컬 데이터를 삭제하려면 게임 내 초기화 기능이 제공되는 경우
+            해당 기능을 사용하거나, 운영체제에서 앱 데이터를 삭제하거나, 게임을 제거하십시오.
+            게임을 제거해도 Apple 또는 Google 계정, 거래 내역이나 플랫폼 백업은 삭제되지 않으므로
+            해당 제공업체를 통해 관리해야 합니다.
+          </p>
+
+          <h2 id="ko-rights">6. 이용자의 선택 및 권리</h2>
+          <p>
+            거주 지역에 따라 이용자는 개인정보에 대한 열람, 정정, 삭제 또는 처리 제한을 요구하거나,
+            특정 처리에 반대하거나, 이동 가능한 형태로 정보를 제공받거나, 동의를 철회하거나,
+            감독기관에 민원을 제기할 권리가 있을 수 있습니다. 현재 당사가 운영하는 플레이어 데이터베이스는
+            없으므로, 많은 요청은 Apple, Google 또는 GitHub가 보유한 정보에 관한 것이며 해당
+            제공업체에 직접 요청해야 합니다.
+          </p>
+          <p>
+            당사가 관리하는 정보에 대해 개인정보 관련 문의를 하거나 권리를 행사하려면 아래 문의 채널을
+            이용하십시오. 당사는 요청을 확인하고 답변하는 데 충분한 정보를 요청할 수 있으며,
+            법률상 요구되는 경우 제한된 기록을 보관할 수 있습니다.
+          </p>
+
+          <h2 id="ko-security">7. 보안 및 국외 처리</h2>
+          <p>
+            당사는 정보의 성격과 위험에 적합한 합리적인 보호조치를 사용합니다. 어떠한 전자적 저장 또는
+            전송 방법도 완전히 안전하지는 않습니다. Apple, Google, Unity 및 GitHub는 자체 방침과
+            적용되는 이전 보호조치에 따라 이용자의 국가 또는 지역 밖에서 정보를 처리할 수 있습니다.
+          </p>
+
+          <h2 id="ko-children">8. 아동의 개인정보</h2>
+          <p>
+            게임은 거주 지역에서 부모의 동의 없이 개인정보 처리에 적법하게 동의할 수 없는 아동을
+            주된 대상으로 하지 않습니다. 부모 또는 보호자가 필요한 동의 없이 아동이 당사에 개인정보를
+            제공했다고 판단하는 경우, 당사가 적절한 조치를 취할 수 있도록 문의해 주십시오.
+          </p>
+
+          <h2 id="ko-changes">9. 본 방침의 변경</h2>
+          <p>
+            당사는 게임, 제공업체 또는 법적 요건의 변경에 따라 본 방침을 개정할 수 있습니다.
+            중요한 변경 사항은 본 사이트, 게임 또는 기타 적절한 경로를 통해 안내합니다. 위 시행일은
+            현재 버전을 나타냅니다. 분석, 광고, 클라우드 저장 또는 개발자가 운영하는 계정 서비스를
+            활성화하기 전에 본 방침과 관련 스토어 공개 정보를 업데이트합니다.
+          </p>
+
+          <h2 id="ko-contact">10. 문의</h2>
+          <div class="contact-panel">
+            <p><strong>배급자:</strong> JimmyLai1989</p>
+            <p>
+              <strong>개인정보 및 지원 문의:</strong>
+              <a href="https://github.com/JimmyLai1989/disaster-afterward-legal/issues/new?title=Privacy%20or%20support%20request">GitHub 이슈 등록</a>
+            </p>
+            <p>
+              GitHub Issues는 공개됩니다. 필요한 최소한의 정보만 공유하고 민감한 개인정보나
+              결제 정보를 포함하지 마십시오.
+            </p>
+          </div>
+        </article>
+
+        <article class="legal-document" data-lang-panel="fr-FR" lang="fr-FR" hidden>
+          <header>
+            <p class="eyebrow">Disaster Afterward</p>
+            <h1 class="legal-title" data-document-title>Politique de confidentialité</h1>
+            <p class="lede">
+              La présente Politique explique quelles informations sont traitées par
+              la version actuelle, où elles sont conservées et quels fournisseurs
+              de plateformes interviennent.
+            </p>
+            <div class="meta-line">
+              <span><strong>Entrée en vigueur :</strong> 1er octobre 2026</span>
+              <span><strong>Éditeur :</strong> JimmyLai1989</span>
+            </div>
+          </header>
+
+          <div class="notice">
+            La version actuelle ne crée pas de compte serveur Disaster Afterward
+            distinct, ne transfère pas les sauvegardes du Jeu vers un serveur
+            exploité par le développeur, n’affiche pas de publicité et ne nous
+            transmet pas de données d’analyse de jeu.
+          </div>
+
+          <nav class="contents" aria-label="Sommaire de la Politique de confidentialité">
+            <strong>Sommaire</strong>
+            <ol>
+              <li><a href="#fr-scope">Champ d’application</a></li>
+              <li><a href="#fr-data">Informations traitées</a></li>
+              <li><a href="#fr-use">Utilisation des informations</a></li>
+              <li><a href="#fr-sharing">Tiers et partage</a></li>
+              <li><a href="#fr-retention">Conservation et suppression</a></li>
+              <li><a href="#fr-rights">Vos choix et vos droits</a></li>
+              <li><a href="#fr-security">Sécurité et transferts</a></li>
+              <li><a href="#fr-children">Enfants</a></li>
+              <li><a href="#fr-changes">Modifications</a></li>
+              <li><a href="#fr-contact">Contact</a></li>
+            </ol>
+          </nav>
+
+          <h2 id="fr-scope">1. Champ d’application et responsable</h2>
+          <p>
+            JimmyLai1989 (« nous », « notre » ou « nos ») édite Disaster Afterward
+            (le « Jeu ») et le présent site juridique. Cette Politique s’applique
+            au Jeu, à l’assistance que nous fournissons et à ces pages juridiques.
+            Les services fournis indépendamment par Apple, Google, Unity ou GitHub
+            sont également régis par les politiques de ces fournisseurs.
+          </p>
+
+          <h2 id="fr-data">2. Informations traitées par le Jeu</h2>
+          <h3>2.1 Connexion à la plateforme</h3>
+          <p>
+            Le Jeu ne propose pas de mode invité. Sur un appareil compatible, la
+            connexion s’effectue avec Apple Game Center sous iOS ou Google Play
+            Games sous Android. Le Jeu peut traiter le type de plateforme, un
+            identifiant de joueur de la plateforme, le nom d’affichage, l’état de
+            l’authentification, l’heure de connexion et les informations relatives
+            aux erreurs de connexion. Une empreinte à sens unique de l’identifiant
+            de plateforme peut être créée sur votre appareil afin de constituer un
+            identifiant stable pour le Jeu.
+          </p>
+          <p>
+            Ces informations servent à authentifier l’accès et à associer l’état
+            local du Jeu à l’identité connectée sur la plateforme. Nous ne recevons
+            ni le mot de passe de votre identifiant Apple, ni celui de votre compte
+            Google, ni l’intégralité de vos identifiants de connexion à la
+            plateforme. La version actuelle n’envoie pas cette identité à une base
+            de données de joueurs exploitée par le développeur.
+          </p>
+
+          <h3>2.2 Données de jeu et de sauvegarde locale</h3>
+          <p>
+            Le Jeu conserve sur votre appareil la progression, les paramètres,
+            l’inventaire, les informations relatives aux personnages, l’état des
+            droits d’accès et les autres informations nécessaires à son
+            fonctionnement. La version actuelle utilise des sauvegardes locales et
+            ne propose pas de service de sauvegarde dans le cloud exploité par le
+            développeur.
+          </p>
+          <p>
+            Selon vos réglages, votre système d’exploitation peut inclure les
+            données de l’application dans une sauvegarde de l’appareil ou du
+            système. Ces sauvegardes sont contrôlées par Apple ou Google, et non
+            par nous.
+          </p>
+
+          <h3>2.3 Achats intégrés</h3>
+          <p>
+            Les achats facultatifs sont traités par l’App Store d’Apple ou Google
+            Play. L’implémentation actuelle du Jeu peut traiter un identifiant de
+            produit, les informations localisées sur le produit, l’état de l’achat,
+            les informations relatives à la transaction ou à la commande, un reçu
+            ou un jeton d’achat, ainsi que l’état du droit d’accès obtenu sur votre
+            appareil. Le produit actuellement configuré est un déblocage Premium
+            unique et non consommable.
+          </p>
+          <p>
+            Apple ou Google traite le paiement et le remboursement. Nous ne
+            recevons pas le numéro complet de votre carte ni vos identifiants
+            bancaires. La version actuelle n’exploite pas de serveur distinct pour
+            le stockage ou la validation des reçus.
+          </p>
+
+          <h3>2.4 Analyse, diagnostic et publicité</h3>
+          <p>
+            La version actuelle utilise une implémentation d’analyse désactivée et
+            inopérante. Elle n’envoie pas intentionnellement d’événements de jeu à
+            notre attention ni à un fournisseur d’analyse externe, et n’intègre
+            aucune publicité tierce. Nous n’utilisons aucun identifiant publicitaire
+            à des fins de suivi et ne vendons pas d’informations personnelles.
+          </p>
+          <p>
+            Apple, Google, la boutique d’applications, le système d’exploitation ou
+            leurs services de plateforme peuvent recueillir indépendamment des
+            informations relatives aux performances, à la sécurité, aux achats ou
+            au diagnostic, selon vos paramètres et leurs propres politiques. Nous
+            ne contrôlons pas ces activités réalisées au niveau de la plateforme.
+          </p>
+
+          <h3>2.5 Communications avec l’assistance</h3>
+          <p>
+            Si vous nous contactez, nous traitons les informations que vous
+            choisissez de fournir, telles que la description du problème, le moyen
+            de réponse, les captures d’écran, les informations sur l’appareil ou le
+            Jeu et l’historique des échanges, afin de répondre à votre demande et
+            de la résoudre.
+          </p>
+          <p>
+            Notre canal de contact actuel est une page publique GitHub Issues. N’y
+            publiez pas de mots de passe, de données de carte bancaire,
+            d’identifiants officiels, de reçus privés ni d’autres informations
+            sensibles. Vous pouvez ouvrir un ticket succinct afin de nous demander
+            de convenir d’un canal de suivi approprié.
+          </p>
+
+          <h3>2.6 Visites sur ce site</h3>
+          <p>
+            Ce site est hébergé par GitHub Pages. GitHub peut traiter les adresses
+            IP, les informations relatives au navigateur, les heures d’accès et les
+            journaux techniques courants nécessaires à la sécurisation et à la
+            diffusion du site. Nous n’ajoutons ni cookies, ni suivi par stockage
+            local, ni pixels publicitaires, ni polices distantes, ni analyse
+            comportementale. Le sélecteur de langue utilise uniquement le paramètre
+            de langue de l’URL et la langue de votre navigateur.
+          </p>
+
+          <h2 id="fr-use">3. Utilisation des informations</h2>
+          <p>Les informations ne sont traitées que dans la mesure raisonnablement nécessaire pour :</p>
+          <ul>
+            <li>vous authentifier par l’intermédiaire de la plateforme prise en charge et faire fonctionner le Jeu ;</li>
+            <li>enregistrer localement la progression et les paramètres ;</li>
+            <li>fournir, vérifier et restaurer le contenu acheté ;</li>
+            <li>répondre aux demandes d’assistance et résoudre les problèmes techniques ;</li>
+            <li>protéger le Jeu, prévenir la fraude ou les abus et respecter la loi ; et</li>
+            <li>faire respecter la présente Politique et les Conditions d’utilisation.</li>
+          </ul>
+          <p>
+            Lorsqu’une base juridique est requise, le traitement repose, selon le
+            cas, sur l’exécution de notre contrat, nos intérêts légitimes à exploiter
+            et sécuriser le Jeu, votre consentement ou le respect d’obligations
+            légales. Nous ne prenons aucune décision fondée exclusivement sur un
+            traitement automatisé produisant des effets juridiques ou des effets
+            d’importance similaire.
+          </p>
+
+          <h2 id="fr-sharing">4. Tiers et partage</h2>
+          <p>
+            Nous ne vendons pas d’informations personnelles et ne les partageons
+            pas à des fins de publicité comportementale intercontextuelle. Selon
+            votre appareil et vos actions, les informations peuvent être traitées
+            par :
+          </p>
+          <ul>
+            <li>
+              <strong>Apple Inc.</strong> pour Game Center, l’App Store, les achats
+              intégrés, la sauvegarde de l’appareil et les services de plateforme.
+            </li>
+            <li>
+              <strong>Google LLC.</strong> pour Google Play Games, Google Play, les
+              achats intégrés, la sauvegarde de l’appareil et les services de plateforme.
+            </li>
+            <li>
+              <strong>Unity Technologies.</strong> en tant que moteur du Jeu et
+              couche technique d’intégration des achats intégrés.
+            </li>
+            <li>
+              <strong>GitHub, Inc.</strong> pour héberger ce site et le canal public
+              d’assistance.
+            </li>
+          </ul>
+          <p>
+            Nous pouvons également divulguer des informations si la loi l’exige,
+            pour répondre à une demande juridique valide, protéger des droits ou
+            la sécurité, avec votre consentement ou dans le cadre d’un transfert
+            d’activité licite.
+          </p>
+          <p>
+            Politiques des fournisseurs :
+            <a href="https://www.apple.com/legal/privacy/">Apple</a>,
+            <a href="https://policies.google.com/privacy">Google</a>,
+            <a href="https://unity.com/legal/privacy-policy">Unity</a> et
+            <a href="https://docs.github.com/site-policy/privacy-policies/github-general-privacy-statement">GitHub</a>.
+          </p>
+
+          <h2 id="fr-retention">5. Conservation et suppression</h2>
+          <ul>
+            <li>
+              Les données locales du Jeu restent sur l’appareil jusqu’à ce qu’elles
+              soient réinitialisées, effacées, supprimées avec le Jeu ou perdues à
+              la suite d’un changement ou d’une réinitialisation de l’appareil.
+            </li>
+            <li>
+              Les informations relatives aux droits acquis par achat restent
+              stockées localement aussi longtemps que nécessaire pour fournir
+              l’achat et peuvent être restaurées depuis la boutique. Apple et
+              Google conservent les relevés de transaction conformément à leurs
+              propres politiques.
+            </li>
+            <li>
+              Les données du compte de plateforme et des sauvegardes sont
+              conservées par le fournisseur concerné selon ses politiques et vos
+              paramètres.
+            </li>
+            <li>
+              Les tickets d’assistance publics restent sur GitHub jusqu’à leur
+              suppression ou leur traitement conformément aux pratiques de
+              conservation de GitHub.
+            </li>
+          </ul>
+          <p>
+            La version actuelle ne crée pas de compte Disaster Afterward distinct
+            ni de profil de joueur côté serveur que nous pourrions supprimer. Pour
+            supprimer les données locales, utilisez l’option de réinitialisation du
+            Jeu si elle est disponible, effacez les données de l’application dans
+            le système d’exploitation ou désinstallez le Jeu. La désinstallation ne
+            supprime pas votre compte Apple ou Google, l’historique de vos
+            transactions ni les sauvegardes de la plateforme ; gérez ces éléments
+            auprès du fournisseur concerné.
+          </p>
+
+          <h2 id="fr-rights">6. Vos choix et vos droits</h2>
+          <p>
+            Selon votre lieu de résidence, vous pouvez disposer de droits d’accès,
+            de rectification, de suppression ou de limitation de vos données
+            personnelles, d’opposition à certains traitements, de portabilité, de
+            retrait du consentement ou de réclamation auprès d’une autorité de
+            contrôle. Comme nous ne détenons actuellement aucune base de données de
+            joueurs exploitée par le développeur, de nombreuses demandes concernent
+            des informations détenues par Apple, Google ou GitHub et doivent être
+            adressées à ce fournisseur.
+          </p>
+          <p>
+            Pour poser une question relative à la confidentialité ou exercer un
+            droit concernant des informations que nous contrôlons, utilisez le
+            canal de contact ci-dessous. Nous pouvons avoir besoin d’informations
+            suffisantes pour vérifier votre demande et y répondre, et pouvons
+            conserver certains éléments limités lorsque la loi l’exige.
+          </p>
+
+          <h2 id="fr-security">7. Sécurité et traitement international</h2>
+          <p>
+            Nous mettons en œuvre des mesures de protection raisonnables adaptées à
+            la nature et aux risques des informations. Aucune méthode de stockage
+            ou de transmission électronique n’est entièrement sûre. Apple, Google,
+            Unity et GitHub peuvent traiter des informations en dehors de votre
+            pays ou région, conformément à leurs politiques et aux garanties de
+            transfert applicables.
+          </p>
+
+          <h2 id="fr-children">8. Protection de la vie privée des enfants</h2>
+          <p>
+            Le Jeu ne s’adresse pas principalement aux enfants qui, dans leur lieu
+            de résidence, ne peuvent légalement consentir au traitement de données
+            personnelles sans autorisation parentale. Un parent ou tuteur estimant
+            qu’un enfant nous a fourni des informations personnelles sans
+            l’autorisation requise peut nous contacter afin que nous prenions les
+            mesures appropriées.
+          </p>
+
+          <h2 id="fr-changes">9. Modifications de la présente Politique</h2>
+          <p>
+            Nous pouvons mettre à jour la présente Politique si le Jeu, les
+            fournisseurs ou les exigences légales évoluent. Les modifications
+            importantes seront communiquées sur ce site, dans le Jeu ou par un
+            autre canal approprié. La date d’entrée en vigueur ci-dessus identifie
+            la version actuelle. Avant d’activer l’analyse, la publicité, les
+            sauvegardes dans le cloud ou un service de compte exploité par le
+            développeur, nous mettrons à jour cette Politique ainsi que les
+            déclarations correspondantes dans les boutiques.
+          </p>
+
+          <h2 id="fr-contact">10. Contact</h2>
+          <div class="contact-panel">
+            <p><strong>Éditeur :</strong> JimmyLai1989</p>
+            <p>
+              <strong>Confidentialité et assistance :</strong>
+              <a href="https://github.com/JimmyLai1989/disaster-afterward-legal/issues/new?title=Privacy%20or%20support%20request">Ouvrir un ticket GitHub</a>
+            </p>
+            <p>
+              Les tickets GitHub sont publics. Ne communiquez que le strict
+              nécessaire et n’incluez aucune donnée personnelle sensible ni aucune
+              information de paiement.
+            </p>
+          </div>
+        </article>
+
+        <article class="legal-document" data-lang-panel="de-DE" lang="de-DE" hidden>
+          <header>
+            <p class="eyebrow">Disaster Afterward</p>
+            <h1 class="legal-title" data-document-title>Datenschutzerklärung</h1>
+            <p class="lede">
+              Diese Erklärung erläutert, welche Informationen die aktuelle Version
+              verarbeitet, wo sie gespeichert werden und welche Plattformanbieter
+              beteiligt sind.
+            </p>
+            <div class="meta-line">
+              <span><strong>Gültig ab:</strong> 1. Oktober 2026</span>
+              <span><strong>Herausgeber:</strong> JimmyLai1989</span>
+            </div>
+          </header>
+
+          <div class="notice">
+            Die aktuelle Version erstellt kein separates Disaster-Afterward-
+            Serverkonto, lädt keine Spielstände auf einen vom Entwickler betriebenen
+            Server hoch, zeigt keine Werbung an und übermittelt uns keine
+            Spielanalysedaten.
+          </div>
+
+          <nav class="contents" aria-label="Inhalt der Datenschutzerklärung">
+            <strong>Inhalt</strong>
+            <ol>
+              <li><a href="#de-scope">Geltungsbereich</a></li>
+              <li><a href="#de-data">Verarbeitete Informationen</a></li>
+              <li><a href="#de-use">Verwendung der Informationen</a></li>
+              <li><a href="#de-sharing">Dritte und Weitergabe</a></li>
+              <li><a href="#de-retention">Speicherung und Löschung</a></li>
+              <li><a href="#de-rights">Ihre Wahlmöglichkeiten und Rechte</a></li>
+              <li><a href="#de-security">Sicherheit und Übermittlungen</a></li>
+              <li><a href="#de-children">Kinder</a></li>
+              <li><a href="#de-changes">Änderungen</a></li>
+              <li><a href="#de-contact">Kontakt</a></li>
+            </ol>
+          </nav>
+
+          <h2 id="de-scope">1. Geltungsbereich und Verantwortlicher</h2>
+          <p>
+            JimmyLai1989 („wir“, „uns“ oder „unser“) veröffentlicht Disaster
+            Afterward (das „Spiel“) und diese rechtliche Website. Diese Erklärung
+            gilt für das Spiel, den von uns angebotenen Support und diese
+            rechtlichen Seiten. Unabhängig von Apple, Google, Unity oder GitHub
+            bereitgestellte Dienste unterliegen zusätzlich den Richtlinien des
+            jeweiligen Anbieters.
+          </p>
+
+          <h2 id="de-data">2. Vom Spiel verarbeitete Informationen</h2>
+          <h3>2.1 Plattformanmeldung</h3>
+          <p>
+            Das Spiel bietet keinen Gastmodus. Auf einem unterstützten Gerät
+            erfolgt die Anmeldung unter iOS über Apple Game Center und unter
+            Android über Google Play Games. Das Spiel kann den Plattformtyp, eine
+            Plattform-Spielerkennung, den Anzeigenamen, den Authentifizierungsstatus,
+            den Anmeldezeitpunkt und Informationen zu Anmeldefehlern verarbeiten.
+            Auf Ihrem Gerät kann aus der Plattformkennung mittels einer
+            Einwegfunktion eine stabile Spielkennung erstellt werden.
+          </p>
+          <p>
+            Diese Informationen werden verwendet, um den Zugang zu authentifizieren
+            und den lokalen Spielstatus mit der angemeldeten Plattformidentität zu
+            verknüpfen. Wir erhalten weder das Passwort Ihrer Apple-ID noch das
+            Passwort Ihres Google-Kontos oder vollständige Plattform-Zugangsdaten.
+            Die aktuelle Version sendet diese Identität nicht an eine vom
+            Entwickler betriebene Spielerdatenbank.
+          </p>
+
+          <h3>2.2 Spieldaten und lokale Spielstände</h3>
+          <p>
+            Das Spiel speichert Fortschritt, Einstellungen, Inventar,
+            Aufstellungsinformationen, Berechtigungsstatus und weitere für den
+            Betrieb des Spiels erforderliche Informationen auf Ihrem Gerät. Die
+            aktuelle Version verwendet lokale Spielstände und bietet keinen vom
+            Entwickler betriebenen Cloud-Speicherdienst.
+          </p>
+          <p>
+            Abhängig von Ihren Einstellungen kann Ihr Betriebssystem
+            Anwendungsdaten in eine Geräte- oder Systemsicherung aufnehmen. Diese
+            Sicherungen werden von Apple oder Google kontrolliert, nicht von uns.
+          </p>
+
+          <h3>2.3 In-App-Käufe</h3>
+          <p>
+            Optionale Käufe werden über den Apple App Store oder Google Play
+            abgewickelt. Die aktuelle Implementierung des Spiels kann eine
+            Produktkennung, lokalisierte Produktinformationen, den Kaufstatus,
+            Transaktions- oder Bestellinformationen, einen Beleg oder Kauftoken
+            sowie den daraus resultierenden Berechtigungsstatus auf Ihrem Gerät
+            verarbeiten. Das derzeit konfigurierte Produkt ist eine einmalige,
+            nicht verbrauchbare Premium-Freischaltung.
+          </p>
+          <p>
+            Apple oder Google wickelt Zahlungen und Erstattungen ab. Wir erhalten
+            weder Ihre vollständige Kartennummer noch Ihre Bankzugangsdaten. Die
+            aktuelle Version betreibt keinen separaten Server zur Speicherung oder
+            Validierung von Belegen.
+          </p>
+
+          <h3>2.4 Analysen, Diagnose und Werbung</h3>
+          <p>
+            Die aktuelle Version verwendet eine deaktivierte, funktionslose
+            Analyseimplementierung. Sie sendet weder uns noch einem externen
+            Analyseanbieter absichtlich Spielereignisse und bindet keine Werbung
+            Dritter ein. Wir verwenden keine Werbekennung zum Tracking und verkaufen
+            keine personenbezogenen Informationen.
+          </p>
+          <p>
+            Apple, Google, der App-Store, das Betriebssystem oder deren
+            Plattformdienste können abhängig von Ihren Einstellungen und ihren
+            eigenen Richtlinien selbstständig Leistungs-, Sicherheits-, Kauf- oder
+            Diagnoseinformationen erheben. Diese Aktivitäten auf Plattformebene
+            werden nicht von uns kontrolliert.
+          </p>
+
+          <h3>2.5 Support-Kommunikation</h3>
+          <p>
+            Wenn Sie uns kontaktieren, verarbeiten wir die von Ihnen freiwillig
+            bereitgestellten Informationen, beispielsweise eine Problembeschreibung,
+            den gewünschten Antwortweg, Bildschirmaufnahmen, Geräte- oder
+            Spielinformationen und den Kommunikationsverlauf, um Ihre Anfrage zu
+            beantworten und zu lösen.
+          </p>
+          <p>
+            Unser derzeitiger Kontaktkanal ist eine öffentliche GitHub-Issues-Seite.
+            Veröffentlichen Sie dort keine Passwörter, Zahlungskartendaten,
+            behördlichen Kennnummern, privaten Belege oder andere sensible
+            Informationen. Sie können ein auf das Nötigste beschränktes Issue
+            eröffnen und uns bitten, einen geeigneten weiteren Kontaktweg zu
+            vereinbaren.
+          </p>
+
+          <h3>2.6 Besuche dieser Website</h3>
+          <p>
+            Diese Website wird über GitHub Pages gehostet. GitHub kann IP-Adressen,
+            Browserinformationen, Zugriffszeiten und übliche technische Protokolle
+            verarbeiten, die für die sichere Bereitstellung der Website erforderlich
+            sind. Wir fügen weder Cookies noch Local-Storage-Tracking,
+            Werbepixel, externe Schriftarten oder Verhaltensanalysen hinzu. Die
+            Sprachauswahl verwendet ausschließlich den Sprachparameter in der URL
+            und die Sprache Ihres Browsers.
+          </p>
+
+          <h2 id="de-use">3. Verwendung der Informationen</h2>
+          <p>Informationen werden nur verarbeitet, soweit dies angemessen erforderlich ist, um:</p>
+          <ul>
+            <li>Sie über die unterstützte Plattform zu authentifizieren und das Spiel zu betreiben;</li>
+            <li>lokalen Spielfortschritt und Einstellungen zu speichern;</li>
+            <li>gekaufte Inhalte bereitzustellen, zu prüfen und wiederherzustellen;</li>
+            <li>Supportanfragen zu beantworten und technische Probleme zu lösen;</li>
+            <li>das Spiel zu schützen, Betrug oder Missbrauch zu verhindern und Gesetze einzuhalten; und</li>
+            <li>diese Erklärung und die Nutzungsbedingungen durchzusetzen.</li>
+          </ul>
+          <p>
+            Soweit eine Rechtsgrundlage erforderlich ist, beruht die Verarbeitung
+            je nach Sachverhalt auf der Erfüllung unseres Vertrags, unseren
+            berechtigten Interessen am Betrieb und an der Sicherheit des Spiels,
+            Ihrer Einwilligung oder der Erfüllung rechtlicher Verpflichtungen. Wir
+            treffen keine ausschließlich auf automatisierter Verarbeitung
+            beruhenden Entscheidungen, die rechtliche oder ähnlich erhebliche
+            Auswirkungen haben.
+          </p>
+
+          <h2 id="de-sharing">4. Dritte und Weitergabe</h2>
+          <p>
+            Wir verkaufen keine personenbezogenen Informationen und geben sie
+            nicht für kontextübergreifende verhaltensbezogene Werbung weiter.
+            Abhängig von Ihrem Gerät und Ihren Handlungen können Informationen von
+            folgenden Anbietern verarbeitet werden:
+          </p>
+          <ul>
+            <li>
+              <strong>Apple Inc.</strong> für Game Center, den App Store,
+              In-App-Käufe, Gerätesicherungen und Plattformdienste.
+            </li>
+            <li>
+              <strong>Google LLC.</strong> für Google Play Games, Google Play,
+              In-App-Käufe, Gerätesicherungen und Plattformdienste.
+            </li>
+            <li>
+              <strong>Unity Technologies.</strong> als Spiel-Engine und technische
+              Integrationsschicht für In-App-Käufe.
+            </li>
+            <li>
+              <strong>GitHub, Inc.</strong> zum Hosting dieser Website und des
+              öffentlichen Supportkanals.
+            </li>
+          </ul>
+          <p>
+            Wir können Informationen außerdem offenlegen, wenn dies gesetzlich
+            vorgeschrieben ist, um auf eine gültige rechtliche Anfrage zu reagieren,
+            Rechte oder Sicherheit zu schützen, mit Ihrer Einwilligung oder im
+            Rahmen einer rechtmäßigen Unternehmensübertragung.
+          </p>
+          <p>
+            Datenschutzhinweise der Anbieter:
+            <a href="https://www.apple.com/legal/privacy/">Apple</a>,
+            <a href="https://policies.google.com/privacy">Google</a>,
+            <a href="https://unity.com/legal/privacy-policy">Unity</a> und
+            <a href="https://docs.github.com/site-policy/privacy-policies/github-general-privacy-statement">GitHub</a>.
+          </p>
+
+          <h2 id="de-retention">5. Speicherung und Löschung</h2>
+          <ul>
+            <li>
+              Lokale Spieldaten verbleiben auf dem Gerät, bis sie zurückgesetzt,
+              gelöscht, zusammen mit dem Spiel entfernt oder durch einen
+              Gerätewechsel beziehungsweise eine Zurücksetzung verloren werden.
+            </li>
+            <li>
+              Informationen über Kaufberechtigungen bleiben so lange lokal
+              gespeichert, wie dies zur Bereitstellung des Kaufs erforderlich ist,
+              und können über den Store wiederhergestellt werden. Apple und Google
+              bewahren Transaktionsaufzeichnungen nach ihren eigenen Richtlinien auf.
+            </li>
+            <li>
+              Plattformkonto- und Sicherungsdaten werden vom jeweiligen Anbieter
+              gemäß dessen Richtlinien und Ihren Einstellungen gespeichert.
+            </li>
+            <li>
+              Öffentliche Support-Issues verbleiben auf GitHub, bis sie gelöscht
+              oder anderweitig gemäß den Aufbewahrungspraktiken von GitHub behandelt
+              werden.
+            </li>
+          </ul>
+          <p>
+            Die aktuelle Version erstellt weder ein separates
+            Disaster-Afterward-Konto noch ein serverseitiges Spielerprofil, das wir
+            löschen könnten. Um lokale Daten zu entfernen, nutzen Sie die
+            Rücksetzoption des Spiels, soweit verfügbar, löschen Sie die
+            Anwendungsdaten im Betriebssystem oder deinstallieren Sie das Spiel.
+            Durch eine Deinstallation werden weder Ihr Apple- oder Google-Konto
+            noch der Transaktionsverlauf oder Plattformsicherungen gelöscht; diese
+            verwalten Sie beim jeweiligen Anbieter.
+          </p>
+
+          <h2 id="de-rights">6. Ihre Wahlmöglichkeiten und Rechte</h2>
+          <p>
+            Je nach Ihrem Wohnort haben Sie möglicherweise das Recht, auf
+            personenbezogene Daten zuzugreifen, sie zu berichtigen, zu löschen oder
+            ihre Verarbeitung einzuschränken, bestimmten Verarbeitungen zu
+            widersprechen, übertragbare Daten zu erhalten, eine Einwilligung zu
+            widerrufen oder sich bei einer Aufsichtsbehörde zu beschweren. Da wir
+            derzeit keine vom Entwickler betriebene Spielerdatenbank unterhalten,
+            betreffen viele Anfragen Informationen, die Apple, Google oder GitHub
+            besitzt, und sollten an den jeweiligen Anbieter gerichtet werden.
+          </p>
+          <p>
+            Wenn Sie eine Datenschutzfrage stellen oder ein Recht in Bezug auf von
+            uns kontrollierte Informationen ausüben möchten, nutzen Sie den unten
+            genannten Kontaktweg. Wir benötigen gegebenenfalls ausreichende
+            Informationen, um Ihre Anfrage zu prüfen und zu beantworten, und
+            dürfen begrenzte Aufzeichnungen aufbewahren, soweit dies gesetzlich
+            vorgeschrieben ist.
+          </p>
+
+          <h2 id="de-security">7. Sicherheit und internationale Verarbeitung</h2>
+          <p>
+            Wir setzen angemessene Schutzmaßnahmen ein, die der Art und dem Risiko
+            der Informationen entsprechen. Keine elektronische Speicher- oder
+            Übertragungsmethode ist vollkommen sicher. Apple, Google, Unity und
+            GitHub können Informationen gemäß ihren Richtlinien und den geltenden
+            Übermittlungsgarantien außerhalb Ihres Landes oder Ihrer Region
+            verarbeiten.
+          </p>
+
+          <h2 id="de-children">8. Datenschutz von Kindern</h2>
+          <p>
+            Das Spiel richtet sich nicht vorrangig an Kinder, die an ihrem Wohnort
+            ohne elterliche Genehmigung nicht wirksam in die Verarbeitung
+            personenbezogener Daten einwilligen können. Eltern oder
+            Erziehungsberechtigte, die der Ansicht sind, dass uns ein Kind ohne die
+            erforderliche Genehmigung personenbezogene Informationen übermittelt
+            hat, können uns kontaktieren, damit wir angemessene Maßnahmen ergreifen.
+          </p>
+
+          <h2 id="de-changes">9. Änderungen dieser Erklärung</h2>
+          <p>
+            Wir können diese Erklärung aktualisieren, wenn sich das Spiel, die
+            Anbieter oder rechtliche Anforderungen ändern. Wesentliche Änderungen
+            werden über diese Website, im Spiel oder über einen anderen geeigneten
+            Kanal mitgeteilt. Das oben angegebene Gültigkeitsdatum kennzeichnet die
+            aktuelle Version. Bevor wir Analysen, Werbung, Cloud-Spielstände oder
+            einen vom Entwickler betriebenen Kontodienst aktivieren, aktualisieren
+            wir diese Erklärung und die entsprechenden Store-Angaben.
+          </p>
+
+          <h2 id="de-contact">10. Kontakt</h2>
+          <div class="contact-panel">
+            <p><strong>Herausgeber:</strong> JimmyLai1989</p>
+            <p>
+              <strong>Datenschutz und Support:</strong>
+              <a href="https://github.com/JimmyLai1989/disaster-afterward-legal/issues/new?title=Privacy%20or%20support%20request">GitHub-Issue eröffnen</a>
+            </p>
+            <p>
+              GitHub Issues sind öffentlich. Teilen Sie nur die unbedingt
+              erforderlichen Informationen mit und geben Sie keine sensiblen
+              personenbezogenen Daten oder Zahlungsdaten an.
+            </p>
+          </div>
+        </article>
+
+        <article class="legal-document" data-lang-panel="es" lang="es" hidden>
+          <header>
+            <p class="eyebrow">Disaster Afterward</p>
+            <h1 class="legal-title" data-document-title>Política de privacidad</h1>
+            <p class="lede">
+              Esta Política explica qué información procesa la versión actual,
+              dónde se conserva y qué proveedores de plataforma intervienen.
+            </p>
+            <div class="meta-line">
+              <span><strong>Vigente desde:</strong> 1 de octubre de 2026</span>
+              <span><strong>Editor:</strong> JimmyLai1989</span>
+            </div>
+          </header>
+
+          <div class="notice">
+            La versión actual no crea una cuenta independiente en servidores de
+            Disaster Afterward, no sube las partidas guardadas a un servidor
+            administrado por el desarrollador, no muestra publicidad ni nos envía
+            datos analíticos sobre el uso del juego.
+          </div>
+
+          <nav class="contents" aria-label="Contenido de la Política de privacidad">
+            <strong>Contenido</strong>
+            <ol>
+              <li><a href="#es-scope">Ámbito de aplicación</a></li>
+              <li><a href="#es-data">Información procesada</a></li>
+              <li><a href="#es-use">Uso de la información</a></li>
+              <li><a href="#es-sharing">Terceros y comunicaciones</a></li>
+              <li><a href="#es-retention">Conservación y eliminación</a></li>
+              <li><a href="#es-rights">Sus opciones y derechos</a></li>
+              <li><a href="#es-security">Seguridad y transferencias</a></li>
+              <li><a href="#es-children">Menores</a></li>
+              <li><a href="#es-changes">Cambios</a></li>
+              <li><a href="#es-contact">Contacto</a></li>
+            </ol>
+          </nav>
+
+          <h2 id="es-scope">1. Ámbito de aplicación y responsable</h2>
+          <p>
+            JimmyLai1989 («nosotros», «nos» o «nuestro») publica Disaster Afterward
+            (el «Juego») y este sitio web legal. Esta Política se aplica al Juego,
+            a la asistencia que prestamos y a estas páginas legales. Los servicios
+            prestados de forma independiente por Apple, Google, Unity o GitHub se
+            rigen además por las políticas de dichos proveedores.
+          </p>
+
+          <h2 id="es-data">2. Información que procesa el Juego</h2>
+          <h3>2.1 Inicio de sesión en la plataforma</h3>
+          <p>
+            El Juego no ofrece un modo de invitado. En dispositivos compatibles,
+            el inicio de sesión utiliza Apple Game Center en iOS o Google Play
+            Games en Android. El Juego puede procesar el tipo de plataforma, un
+            identificador de jugador de la plataforma, el nombre visible, el estado
+            de autenticación, la hora de inicio de sesión y datos sobre errores de
+            inicio de sesión. En su dispositivo puede generarse un hash unidireccional
+            del identificador de plataforma como identificador estable del Juego.
+          </p>
+          <p>
+            Esta información se utiliza para autenticar el acceso y asociar el
+            estado local del Juego con la identidad conectada en la plataforma. No
+            recibimos su contraseña del Apple ID o de la Cuenta de Google ni sus
+            credenciales completas de la plataforma. La versión actual no envía
+            esta identidad a una base de datos de jugadores administrada por el
+            desarrollador.
+          </p>
+
+          <h3>2.2 Datos de juego y partidas guardadas localmente</h3>
+          <p>
+            El Juego almacena en su dispositivo el progreso, los ajustes, el
+            inventario, la información de la plantilla, el estado de los derechos
+            adquiridos y otros datos necesarios para su funcionamiento. La versión
+            actual utiliza partidas guardadas localmente y no ofrece un servicio de
+            guardado en la nube administrado por el desarrollador.
+          </p>
+          <p>
+            Según sus ajustes, el sistema operativo puede incluir los datos de la
+            aplicación en una copia de seguridad del dispositivo o del sistema.
+            Tales copias están bajo el control de Apple o Google, no del nuestro.
+          </p>
+
+          <h3>2.3 Compras dentro de la aplicación</h3>
+          <p>
+            Las compras opcionales son procesadas por Apple App Store o Google
+            Play. La implementación actual del Juego puede procesar un identificador
+            de producto, información localizada del producto, el estado de la
+            compra, datos de la transacción o del pedido, un recibo o token de compra
+            y el estado del derecho adquirido resultante en su dispositivo. El
+            producto configurado actualmente es un desbloqueo premium único y no
+            consumible.
+          </p>
+          <p>
+            Apple o Google procesa el pago y el reembolso. No recibimos el número
+            completo de su tarjeta ni sus credenciales bancarias. La versión actual
+            no utiliza un servidor independiente para almacenar o validar recibos.
+          </p>
+
+          <h3>2.4 Analítica, diagnósticos y publicidad</h3>
+          <p>
+            La versión actual utiliza una implementación de analítica desactivada
+            que no realiza ninguna operación. No envía intencionadamente eventos de
+            juego a nosotros ni a un proveedor externo de analítica, y no integra
+            publicidad de terceros. No utilizamos identificadores publicitarios
+            para rastreo ni vendemos información personal.
+          </p>
+          <p>
+            Apple, Google, la tienda de aplicaciones, el sistema operativo o sus
+            servicios de plataforma pueden recopilar de forma independiente datos
+            de rendimiento, seguridad, compras o diagnóstico conforme a sus ajustes
+            y sus propias políticas. No controlamos esas actividades de la plataforma.
+          </p>
+
+          <h3>2.5 Comunicaciones con asistencia</h3>
+          <p>
+            Si se pone en contacto con nosotros, procesamos la información que
+            decida proporcionar —por ejemplo, la descripción del problema, el medio
+            de respuesta, capturas de pantalla, información del dispositivo o del
+            Juego y el historial de respuestas— para atender y resolver la solicitud.
+          </p>
+          <p>
+            Nuestro canal de contacto actual es una página pública de GitHub Issues.
+            No publique allí contraseñas, datos de tarjetas, identificadores oficiales,
+            recibos privados ni otra información sensible. Puede abrir una incidencia
+            mínima y pedirnos que organicemos un canal de seguimiento adecuado.
+          </p>
+
+          <h3>2.6 Visitas a este sitio web</h3>
+          <p>
+            Este sitio está alojado en GitHub Pages. GitHub puede procesar direcciones
+            IP, información del navegador, horas de acceso y registros técnicos
+            habituales necesarios para proteger y servir el sitio. No añadimos
+            cookies, rastreo mediante almacenamiento local, píxeles publicitarios,
+            fuentes remotas ni analítica conductual. El selector de idioma utiliza
+            únicamente el parámetro de consulta de la URL y el idioma del navegador.
+          </p>
+
+          <h2 id="es-use">3. Uso de la información</h2>
+          <p>La información se procesa solo en la medida razonablemente necesaria para:</p>
+          <ul>
+            <li>autenticar mediante la plataforma compatible y operar el Juego;</li>
+            <li>guardar localmente el progreso y los ajustes;</li>
+            <li>entregar, verificar y restaurar el contenido comprado;</li>
+            <li>responder a solicitudes de asistencia y resolver problemas técnicos;</li>
+            <li>proteger el Juego, prevenir el fraude o uso indebido y cumplir la ley; y</li>
+            <li>hacer cumplir esta Política y las Condiciones de uso.</li>
+          </ul>
+          <p>
+            Cuando se requiere una base jurídica, el tratamiento se basa, según
+            corresponda, en la ejecución de nuestro acuerdo, el interés legítimo en
+            operar y proteger el Juego, su consentimiento o el cumplimiento de
+            obligaciones legales. No tomamos decisiones basadas exclusivamente en
+            un tratamiento automatizado que produzcan efectos jurídicos o de
+            importancia similar.
+          </p>
+
+          <h2 id="es-sharing">4. Terceros y comunicaciones</h2>
+          <p>
+            No vendemos información personal ni la compartimos con fines de
+            publicidad conductual entre distintos contextos. En función de su
+            dispositivo y sus acciones, la información puede ser procesada por:
+          </p>
+          <ul>
+            <li>
+              <strong>Apple Inc.</strong>, para Game Center, App Store, compras
+              dentro de la aplicación, copias de seguridad y servicios de plataforma.
+            </li>
+            <li>
+              <strong>Google LLC.</strong>, para Google Play Games, Google Play,
+              compras dentro de la aplicación, copias de seguridad y servicios de
+              plataforma.
+            </li>
+            <li>
+              <strong>Unity Technologies</strong>, como motor del Juego y capa
+              técnica de integración de compras dentro de la aplicación.
+            </li>
+            <li>
+              <strong>GitHub, Inc.</strong>, para alojar este sitio web y el canal
+              público de asistencia.
+            </li>
+          </ul>
+          <p>
+            También podemos comunicar información cuando la ley lo exija, para
+            responder a una solicitud legal válida, proteger derechos o la seguridad,
+            con su consentimiento o como parte de una transferencia empresarial lícita.
+          </p>
+          <p>
+            Políticas de los proveedores:
+            <a href="https://www.apple.com/legal/privacy/">Apple</a>,
+            <a href="https://policies.google.com/privacy">Google</a>,
+            <a href="https://unity.com/legal/privacy-policy">Unity</a> y
+            <a href="https://docs.github.com/site-policy/privacy-policies/github-general-privacy-statement">GitHub</a>.
+          </p>
+
+          <h2 id="es-retention">5. Conservación y eliminación</h2>
+          <ul>
+            <li>
+              Los datos locales del Juego permanecen en el dispositivo hasta que
+              se restablecen, borran, eliminan junto con el Juego o se pierden al
+              cambiar o restablecer el dispositivo.
+            </li>
+            <li>
+              La información local sobre derechos de compra permanece mientras sea
+              necesaria para ofrecer la compra y puede restaurarse desde la tienda.
+              Apple y Google conservan los registros de transacciones conforme a
+              sus propias políticas.
+            </li>
+            <li>
+              Los datos de la cuenta de plataforma y de las copias de seguridad son
+              conservados por el proveedor correspondiente conforme a sus políticas
+              y a sus ajustes.
+            </li>
+            <li>
+              Las incidencias públicas de asistencia permanecen en GitHub hasta que
+              se eliminen o se traten conforme a las prácticas de conservación de GitHub.
+            </li>
+          </ul>
+          <p>
+            La versión actual no crea una cuenta independiente de Disaster Afterward
+            ni un perfil de jugador en nuestros servidores que podamos eliminar. Para
+            borrar los datos locales, utilice la opción de restablecimiento del Juego,
+            si está disponible, borre sus datos desde el sistema operativo o desinstálelo.
+            La desinstalación no elimina su cuenta de Apple o Google, el historial de
+            transacciones ni las copias de seguridad de la plataforma; gestione estos
+            elementos a través del proveedor correspondiente.
+          </p>
+
+          <h2 id="es-rights">6. Sus opciones y derechos</h2>
+          <p>
+            Según su lugar de residencia, puede tener derecho a acceder, rectificar,
+            eliminar o limitar sus datos personales; oponerse a determinados tratamientos;
+            recibir datos portables; retirar el consentimiento; o presentar una
+            reclamación ante una autoridad de control. Dado que actualmente no
+            mantenemos una base de datos de jugadores administrada por el desarrollador,
+            muchas solicitudes se referirán a información conservada por Apple, Google
+            o GitHub y deberán dirigirse al proveedor correspondiente.
+          </p>
+          <p>
+            Para plantear una consulta de privacidad o ejercer un derecho respecto
+            de información que controlemos, utilice el canal de contacto indicado a
+            continuación. Es posible que necesitemos información suficiente para
+            verificar y responder a la solicitud, y que conservemos registros
+            limitados cuando la ley lo exija.
+          </p>
+
+          <h2 id="es-security">7. Seguridad y tratamiento internacional</h2>
+          <p>
+            Aplicamos salvaguardias razonables y adecuadas a la naturaleza y al riesgo
+            de la información. Ningún método de almacenamiento o transmisión electrónica
+            es completamente seguro. Apple, Google, Unity y GitHub pueden procesar
+            información fuera de su país o región conforme a sus políticas y a las
+            garantías de transferencia aplicables.
+          </p>
+
+          <h2 id="es-children">8. Privacidad de los menores</h2>
+          <p>
+            El Juego no está dirigido principalmente a menores que, en su lugar de
+            residencia, no puedan consentir lícitamente el tratamiento de datos
+            personales sin autorización parental. Si un padre, madre o tutor cree
+            que un menor nos facilitó información personal sin la autorización
+            necesaria, puede ponerse en contacto con nosotros para que adoptemos
+            las medidas oportunas.
+          </p>
+
+          <h2 id="es-changes">9. Cambios en esta Política</h2>
+          <p>
+            Podemos actualizar esta Política cuando cambien el Juego, los proveedores
+            o los requisitos legales. Los cambios importantes se comunicarán mediante
+            este sitio, el Juego u otro canal adecuado. La fecha de vigencia anterior
+            identifica la versión actual. Antes de habilitar analítica, publicidad,
+            guardado en la nube o un servicio de cuentas administrado por el desarrollador,
+            actualizaremos esta Política y la información correspondiente en las tiendas.
+          </p>
+
+          <h2 id="es-contact">10. Contacto</h2>
+          <div class="contact-panel">
+            <p><strong>Editor:</strong> JimmyLai1989</p>
+            <p>
+              <strong>Privacidad y asistencia:</strong>
+              <a href="https://github.com/JimmyLai1989/disaster-afterward-legal/issues/new?title=Privacy%20or%20support%20request">Abrir una incidencia en GitHub</a>
+            </p>
+            <p>
+              Las incidencias de GitHub son públicas. Comparta solo la información
+              mínima necesaria y no incluya datos personales sensibles ni datos de pago.
+            </p>
+          </div>
+        </article>
+
+        <article class="legal-document" data-lang-panel="pt-BR" lang="pt-BR" hidden>
+          <header>
+            <p class="eyebrow">Disaster Afterward</p>
+            <h1 class="legal-title" data-document-title>Política de Privacidade</h1>
+            <p class="lede">
+              Esta Política explica quais informações a versão atual processa,
+              onde elas são mantidas e quais provedores de plataforma participam.
+            </p>
+            <div class="meta-line">
+              <span><strong>Em vigor desde:</strong> 1º de outubro de 2026</span>
+              <span><strong>Publicador:</strong> JimmyLai1989</span>
+            </div>
+          </header>
+
+          <div class="notice">
+            A versão atual não cria uma conta separada nos servidores do Disaster
+            Afterward, não envia dados salvos do jogo a um servidor operado pelo
+            desenvolvedor, não exibe publicidade e não nos envia dados analíticos
+            de uso do jogo.
+          </div>
+
+          <nav class="contents" aria-label="Conteúdo da Política de Privacidade">
+            <strong>Conteúdo</strong>
+            <ol>
+              <li><a href="#ptbr-scope">Escopo</a></li>
+              <li><a href="#ptbr-data">Informações processadas</a></li>
+              <li><a href="#ptbr-use">Como as informações são usadas</a></li>
+              <li><a href="#ptbr-sharing">Terceiros e compartilhamento</a></li>
+              <li><a href="#ptbr-retention">Retenção e exclusão</a></li>
+              <li><a href="#ptbr-rights">Suas escolhas e seus direitos</a></li>
+              <li><a href="#ptbr-security">Segurança e transferências</a></li>
+              <li><a href="#ptbr-children">Crianças e adolescentes</a></li>
+              <li><a href="#ptbr-changes">Alterações</a></li>
+              <li><a href="#ptbr-contact">Contato</a></li>
+            </ol>
+          </nav>
+
+          <h2 id="ptbr-scope">1. Escopo e controlador</h2>
+          <p>
+            JimmyLai1989 (“nós”, “nos” ou “nosso”) publica o Disaster Afterward
+            (o “Jogo”) e este site jurídico. Esta Política se aplica ao Jogo, ao
+            suporte que prestamos e a estas páginas jurídicas. Os serviços prestados
+            de forma independente pela Apple, Google, Unity ou GitHub também são
+            regidos pelas políticas desses provedores.
+          </p>
+
+          <h2 id="ptbr-data">2. Informações que o Jogo processa</h2>
+          <h3>2.1 Login pela plataforma</h3>
+          <p>
+            O Jogo não oferece modo de convidado. Em um dispositivo compatível, o
+            login utiliza o Apple Game Center no iOS ou o Google Play Games no Android.
+            O Jogo pode processar o tipo de plataforma, um identificador de jogador
+            da plataforma, nome de exibição, status de autenticação, horário do login
+            e informações sobre erros de login. Um hash unidirecional do identificador
+            da plataforma pode ser criado no seu dispositivo como identificador estável
+            do Jogo.
+          </p>
+          <p>
+            Essas informações são usadas para autenticar o acesso e associar o estado
+            local do Jogo à identidade conectada na plataforma. Não recebemos sua senha
+            do ID Apple, da Conta do Google ou as credenciais completas da plataforma.
+            A versão atual não envia essa identidade a um banco de dados de jogadores
+            operado pelo desenvolvedor.
+          </p>
+
+          <h3>2.2 Dados de jogo e dados salvos localmente</h3>
+          <p>
+            O Jogo armazena no seu dispositivo o progresso, as configurações, o inventário,
+            as informações da equipe, o status de direitos adquiridos e outros dados
+            necessários para executar o Jogo. A versão atual utiliza dados salvos
+            localmente e não oferece um serviço de salvamento em nuvem operado pelo
+            desenvolvedor.
+          </p>
+          <p>
+            Conforme suas configurações, o sistema operacional pode incluir dados do
+            aplicativo em um backup do dispositivo ou do sistema. Esses backups são
+            controlados pela Apple ou Google, e não por nós.
+          </p>
+
+          <h3>2.3 Compras dentro do aplicativo</h3>
+          <p>
+            As compras opcionais são processadas pela Apple App Store ou Google Play.
+            A implementação atual do Jogo pode processar um identificador de produto,
+            informações localizadas do produto, status da compra, informações da
+            transação ou do pedido, um recibo ou token de compra e o status do direito
+            adquirido resultante no seu dispositivo. O produto configurado atualmente
+            é um desbloqueio premium único e não consumível.
+          </p>
+          <p>
+            A Apple ou o Google processa o pagamento e o reembolso. Não recebemos o
+            número completo do seu cartão nem suas credenciais bancárias. A versão
+            atual não utiliza um servidor separado para armazenar ou validar recibos.
+          </p>
+
+          <h3>2.4 Análises, diagnósticos e publicidade</h3>
+          <p>
+            A versão atual usa uma implementação de análise desativada, que não executa
+            nenhuma operação. Ela não envia intencionalmente eventos de jogo a nós ou
+            a um provedor externo de análise e não integra publicidade de terceiros.
+            Não usamos identificadores de publicidade para rastreamento e não vendemos
+            informações pessoais.
+          </p>
+          <p>
+            A Apple, o Google, a loja de aplicativos, o sistema operacional ou seus
+            serviços de plataforma podem coletar de forma independente informações de
+            desempenho, segurança, compra ou diagnóstico conforme suas configurações e
+            políticas próprias. Essas atividades da plataforma não são controladas por nós.
+          </p>
+
+          <h3>2.5 Comunicações com o suporte</h3>
+          <p>
+            Se você entrar em contato conosco, processaremos as informações que optar
+            por fornecer, como a descrição do problema, o meio de resposta, capturas de
+            tela, informações do dispositivo ou do Jogo e o histórico de respostas, para
+            atender e resolver a solicitação.
+          </p>
+          <p>
+            Nosso canal de contato atual é uma página pública do GitHub Issues. Não
+            publique senhas, dados de cartão, documentos oficiais, recibos particulares
+            ou outras informações confidenciais. Você pode abrir uma ocorrência mínima
+            para solicitar que organizemos um canal adequado para o acompanhamento.
+          </p>
+
+          <h3>2.6 Visitas a este site</h3>
+          <p>
+            Este site é hospedado pelo GitHub Pages. O GitHub pode processar endereços IP,
+            informações do navegador, horários de acesso e registros técnicos de rotina
+            necessários para proteger e disponibilizar o site. Não adicionamos cookies,
+            rastreamento por armazenamento local, pixels de publicidade, fontes remotas
+            nem análises comportamentais. O seletor de idioma utiliza apenas o parâmetro
+            de consulta da URL e o idioma do navegador.
+          </p>
+
+          <h2 id="ptbr-use">3. Como as informações são usadas</h2>
+          <p>As informações são processadas somente na medida razoavelmente necessária para:</p>
+          <ul>
+            <li>autenticar pela plataforma compatível e operar o Jogo;</li>
+            <li>salvar localmente o progresso e as configurações;</li>
+            <li>entregar, verificar e restaurar conteúdo comprado;</li>
+            <li>responder a solicitações de suporte e solucionar problemas técnicos;</li>
+            <li>proteger o Jogo, prevenir fraude ou uso indevido e cumprir a lei; e</li>
+            <li>fazer cumprir esta Política e os Termos de Uso.</li>
+          </ul>
+          <p>
+            Quando uma base legal for exigida, o tratamento terá como fundamento,
+            conforme aplicável, a execução do nosso contrato, interesses legítimos em
+            operar e proteger o Jogo, seu consentimento ou o cumprimento de obrigações
+            legais. Não tomamos decisões baseadas exclusivamente em tratamento
+            automatizado que produzam efeitos jurídicos ou igualmente relevantes.
+          </p>
+
+          <h2 id="ptbr-sharing">4. Terceiros e compartilhamento</h2>
+          <p>
+            Não vendemos informações pessoais nem as compartilhamos para publicidade
+            comportamental entre contextos diferentes. Dependendo do seu dispositivo e
+            de suas ações, as informações podem ser processadas por:
+          </p>
+          <ul>
+            <li>
+              <strong>Apple Inc.</strong>, para Game Center, App Store, compras dentro
+              do aplicativo, backup do dispositivo e serviços de plataforma.
+            </li>
+            <li>
+              <strong>Google LLC.</strong>, para Google Play Games, Google Play,
+              compras dentro do aplicativo, backup do dispositivo e serviços de plataforma.
+            </li>
+            <li>
+              <strong>Unity Technologies</strong>, como mecanismo do Jogo e camada
+              técnica de integração de compras dentro do aplicativo.
+            </li>
+            <li>
+              <strong>GitHub, Inc.</strong>, para hospedar este site e o canal público
+              de suporte.
+            </li>
+          </ul>
+          <p>
+            Também podemos divulgar informações quando exigido por lei, para responder
+            a uma solicitação legal válida, proteger direitos ou a segurança, com seu
+            consentimento ou como parte de uma transferência empresarial lícita.
+          </p>
+          <p>
+            Políticas dos provedores:
+            <a href="https://www.apple.com/legal/privacy/">Apple</a>,
+            <a href="https://policies.google.com/privacy">Google</a>,
+            <a href="https://unity.com/legal/privacy-policy">Unity</a> e
+            <a href="https://docs.github.com/site-policy/privacy-policies/github-general-privacy-statement">GitHub</a>.
+          </p>
+
+          <h2 id="ptbr-retention">5. Retenção e exclusão</h2>
+          <ul>
+            <li>
+              Os dados locais do Jogo permanecem no dispositivo até serem redefinidos,
+              apagados, removidos com o Jogo ou perdidos por troca ou redefinição do dispositivo.
+            </li>
+            <li>
+              As informações locais sobre direitos de compra permanecem pelo tempo
+              necessário para disponibilizar a compra e podem ser restauradas pela loja.
+              A Apple e o Google mantêm os registros das transações conforme suas políticas.
+            </li>
+            <li>
+              Os dados da conta da plataforma e de backup são mantidos pelo provedor
+              correspondente conforme suas políticas e suas configurações.
+            </li>
+            <li>
+              As ocorrências públicas de suporte permanecem no GitHub até serem removidas
+              ou tratadas de outra forma conforme as práticas de retenção do GitHub.
+            </li>
+          </ul>
+          <p>
+            A versão atual não cria uma conta separada do Disaster Afterward nem um perfil
+            de jogador nos nossos servidores que possamos excluir. Para remover os dados
+            locais, use a opção de redefinição do Jogo, se disponível, apague os dados do
+            aplicativo no sistema operacional ou desinstale o Jogo. A desinstalação não
+            exclui sua conta Apple ou Google, o histórico de transações nem os backups da
+            plataforma; gerencie esses itens com o provedor correspondente.
+          </p>
+
+          <h2 id="ptbr-rights">6. Suas escolhas e seus direitos</h2>
+          <p>
+            Dependendo de onde você reside, pode ter direitos de acessar, corrigir,
+            excluir ou restringir dados pessoais; opor-se a determinados tratamentos;
+            receber dados portáveis; retirar o consentimento; ou apresentar uma reclamação
+            a uma autoridade. Como atualmente não mantemos um banco de dados de jogadores
+            operado pelo desenvolvedor, muitas solicitações dizem respeito a informações
+            mantidas pela Apple, Google ou GitHub e devem ser dirigidas ao respectivo provedor.
+          </p>
+          <p>
+            Para fazer uma pergunta sobre privacidade ou exercer um direito relativo a
+            informações que controlamos, use o canal de contato abaixo. Podemos precisar
+            de informações suficientes para verificar e responder à solicitação e podemos
+            manter registros limitados quando exigido por lei.
+          </p>
+
+          <h2 id="ptbr-security">7. Segurança e tratamento internacional</h2>
+          <p>
+            Adotamos salvaguardas razoáveis e adequadas à natureza e ao risco das
+            informações. Nenhum método de armazenamento ou transmissão eletrônica é
+            completamente seguro. A Apple, Google, Unity e GitHub podem processar
+            informações fora do seu país ou região conforme suas políticas e as
+            salvaguardas de transferência aplicáveis.
+          </p>
+
+          <h2 id="ptbr-children">8. Privacidade de crianças e adolescentes</h2>
+          <p>
+            O Jogo não é destinado principalmente a crianças ou adolescentes que, no
+            local onde residem, não possam consentir legalmente com o tratamento de dados
+            pessoais sem autorização dos responsáveis. O responsável que acreditar que
+            um menor nos forneceu informações pessoais sem a autorização necessária pode
+            entrar em contato para que adotemos as medidas apropriadas.
+          </p>
+
+          <h2 id="ptbr-changes">9. Alterações nesta Política</h2>
+          <p>
+            Podemos atualizar esta Política quando houver mudanças no Jogo, nos provedores
+            ou nos requisitos legais. Alterações relevantes serão comunicadas por este
+            site, pelo Jogo ou por outro canal adequado. A data de vigência acima identifica
+            a versão atual. Antes de habilitar análises, publicidade, salvamento em nuvem ou
+            um serviço de conta operado pelo desenvolvedor, atualizaremos esta Política e
+            as divulgações correspondentes nas lojas.
+          </p>
+
+          <h2 id="ptbr-contact">10. Contato</h2>
+          <div class="contact-panel">
+            <p><strong>Publicador:</strong> JimmyLai1989</p>
+            <p>
+              <strong>Privacidade e suporte:</strong>
+              <a href="https://github.com/JimmyLai1989/disaster-afterward-legal/issues/new?title=Privacy%20or%20support%20request">Abrir uma ocorrência no GitHub</a>
+            </p>
+            <p>
+              As ocorrências no GitHub são públicas. Compartilhe apenas as informações
+              mínimas necessárias e não inclua dados pessoais sensíveis ou dados de pagamento.
+            </p>
+          </div>
+        </article>
+
+        <article class="legal-document" data-lang-panel="ru-RU" lang="ru-RU" hidden>
+          <header>
+            <p class="eyebrow">Disaster Afterward</p>
+            <h1 class="legal-title" data-document-title>Политика конфиденциальности</h1>
+            <p class="lede">
+              Настоящая Политика объясняет, какие сведения обрабатывает текущая
+              версия Игры, где они хранятся и какие поставщики платформ участвуют
+              в обработке.
+            </p>
+            <div class="meta-line">
+              <span><strong>Дата вступления в силу:</strong> 1 октября 2026 г.</span>
+              <span><strong>Издатель:</strong> JimmyLai1989</span>
+            </div>
+          </header>
+
+          <div class="notice">
+            Текущая версия не создаёт отдельную серверную учётную запись Disaster
+            Afterward, не загружает игровые сохранения на сервер под управлением
+            разработчика, не показывает рекламу и не отправляет нам аналитику
+            игрового процесса.
+          </div>
+
+          <nav class="contents" aria-label="Содержание Политики конфиденциальности">
+            <strong>Содержание</strong>
+            <ol>
+              <li><a href="#ru-scope">Сфера действия</a></li>
+              <li><a href="#ru-data">Обрабатываемые сведения</a></li>
+              <li><a href="#ru-use">Как используются сведения</a></li>
+              <li><a href="#ru-sharing">Третьи лица и передача данных</a></li>
+              <li><a href="#ru-retention">Хранение и удаление</a></li>
+              <li><a href="#ru-rights">Ваш выбор и права</a></li>
+              <li><a href="#ru-security">Безопасность и передача за рубеж</a></li>
+              <li><a href="#ru-children">Дети</a></li>
+              <li><a href="#ru-changes">Изменения</a></li>
+              <li><a href="#ru-contact">Контакты</a></li>
+            </ol>
+          </nav>
+
+          <h2 id="ru-scope">1. Сфера действия и оператор</h2>
+          <p>
+            JimmyLai1989 («мы», «нас» или «наш») издаёт Disaster Afterward
+            («Игра») и поддерживает этот юридический сайт. Настоящая Политика
+            распространяется на Игру, оказываемую нами поддержку и эти юридические
+            страницы. Услуги, самостоятельно предоставляемые Apple, Google, Unity
+            или GitHub, также регулируются политиками соответствующих поставщиков.
+          </p>
+
+          <h2 id="ru-data">2. Сведения, обрабатываемые Игрой</h2>
+          <h3>2.1 Вход через платформу</h3>
+          <p>
+            В Игре нет гостевого режима. На поддерживаемом устройстве для входа
+            используется Apple Game Center на iOS или Google Play Games на Android.
+            Игра может обрабатывать тип платформы, идентификатор игрока на платформе,
+            отображаемое имя, статус аутентификации, время входа и сведения об
+            ошибках входа. На вашем устройстве может создаваться односторонний хеш
+            идентификатора платформы в качестве постоянного игрового идентификатора.
+          </p>
+          <p>
+            Эти сведения используются для аутентификации доступа и связывания
+            локального состояния Игры с учётной записью платформы, через которую
+            выполнен вход. Мы не получаем пароль Apple ID, пароль аккаунта Google
+            или полный набор учётных данных платформы. Текущая версия не отправляет
+            эти идентификационные сведения в базу игроков под управлением разработчика.
+          </p>
+
+          <h3>2.2 Игровой процесс и локальные сохранения</h3>
+          <p>
+            Игра хранит на вашем устройстве прогресс, настройки, инвентарь, сведения
+            о составе персонажей, статус прав на контент и иные данные, необходимые
+            для работы Игры. Текущая версия использует локальные сохранения и не
+            предоставляет облачное хранение под управлением разработчика.
+          </p>
+          <p>
+            В зависимости от ваших настроек операционная система может включать
+            данные приложения в резервную копию устройства или системы. Такие
+            резервные копии находятся под управлением Apple или Google, а не нашим.
+          </p>
+
+          <h3>2.3 Встроенные покупки</h3>
+          <p>
+            Необязательные покупки обрабатываются Apple App Store или Google Play.
+            Текущая реализация Игры может обрабатывать идентификатор продукта,
+            локализованные сведения о продукте, статус покупки, сведения о
+            транзакции или заказе, квитанцию или токен покупки и полученный статус
+            права на контент на вашем устройстве. Сейчас настроен единовременный
+            нерасходуемый продукт, открывающий премиум-возможности.
+          </p>
+          <p>
+            Оплату и возврат средств обрабатывает Apple или Google. Мы не получаем
+            полный номер вашей банковской карты или данные для доступа к банковскому
+            счёту. В текущей версии нет отдельного сервера для хранения или проверки
+            квитанций.
+          </p>
+
+          <h3>2.4 Аналитика, диагностика и реклама</h3>
+          <p>
+            В текущей версии используется отключённая аналитическая реализация,
+            которая не выполняет никаких операций. Она намеренно не отправляет
+            события игрового процесса нам или внешнему поставщику аналитики; Игра
+            также не интегрирует рекламу третьих лиц. Мы не используем рекламный
+            идентификатор для отслеживания и не продаём персональные данные.
+          </p>
+          <p>
+            Apple, Google, магазин приложений, операционная система или их
+            платформенные службы могут самостоятельно собирать сведения о
+            производительности, безопасности, покупках или диагностике в соответствии
+            с вашими настройками и собственными политиками. Мы не контролируем такую
+            деятельность на уровне платформы.
+          </p>
+
+          <h3>2.5 Обращения в службу поддержки</h3>
+          <p>
+            Если вы обращаетесь к нам, мы обрабатываем сведения, которые вы решите
+            предоставить, например описание проблемы, способ для ответа, снимки
+            экрана, сведения об устройстве или Игре и историю переписки, чтобы
+            ответить на обращение и решить проблему.
+          </p>
+          <p>
+            Сейчас нашим каналом связи является общедоступная страница GitHub Issues.
+            Не публикуйте там пароли, данные банковских карт, государственные
+            идентификаторы, закрытые квитанции или иные конфиденциальные сведения.
+            Вы можете создать краткое обращение с просьбой согласовать подходящий
+            способ дальнейшей связи.
+          </p>
+
+          <h3>2.6 Посещение этого сайта</h3>
+          <p>
+            Этот сайт размещён на GitHub Pages. Для защиты и предоставления сайта
+            GitHub может обрабатывать IP-адреса, сведения о браузере, время доступа
+            и стандартные технические журналы. Мы не добавляем файлы cookie,
+            отслеживание через локальное хранилище, рекламные пиксели, удалённые
+            шрифты или поведенческую аналитику. Переключатель языка использует только
+            параметр запроса в URL-адресе и язык вашего браузера.
+          </p>
+
+          <h2 id="ru-use">3. Как используются сведения</h2>
+          <p>Сведения обрабатываются только в объёме, разумно необходимом для того, чтобы:</p>
+          <ul>
+            <li>выполнять аутентификацию через поддерживаемую платформу и обеспечивать работу Игры;</li>
+            <li>сохранять локальный прогресс и настройки;</li>
+            <li>предоставлять, проверять и восстанавливать приобретённый контент;</li>
+            <li>отвечать на запросы в службу поддержки и устранять технические проблемы;</li>
+            <li>защищать Игру, предотвращать мошенничество или злоупотребления и соблюдать закон; а также</li>
+            <li>обеспечивать соблюдение настоящей Политики и Условий использования.</li>
+          </ul>
+          <p>
+            Когда требуется правовое основание, обработка в зависимости от ситуации
+            осуществляется для исполнения нашего соглашения, в наших законных
+            интересах по эксплуатации и защите Игры, на основании вашего согласия
+            либо для выполнения юридических обязанностей. Мы не принимаем решения,
+            основанные исключительно на автоматизированной обработке, которые
+            порождают юридические или аналогичные существенные последствия.
+          </p>
+
+          <h2 id="ru-sharing">4. Третьи лица и передача данных</h2>
+          <p>
+            Мы не продаём персональные данные и не передаём их для поведенческой
+            рекламы в разных контекстах. В зависимости от вашего устройства и
+            действий сведения могут обрабатываться следующими сторонами:
+          </p>
+          <ul>
+            <li>
+              <strong>Apple Inc.</strong> — для Game Center, App Store, встроенных
+              покупок, резервного копирования устройства и платформенных служб.
+            </li>
+            <li>
+              <strong>Google LLC.</strong> — для Google Play Games, Google Play,
+              встроенных покупок, резервного копирования устройства и платформенных служб.
+            </li>
+            <li>
+              <strong>Unity Technologies.</strong> — в качестве игрового движка и
+              технического интеграционного слоя для встроенных покупок.
+            </li>
+            <li>
+              <strong>GitHub, Inc.</strong> — для размещения этого сайта и
+              общедоступного канала поддержки.
+            </li>
+          </ul>
+          <p>
+            Мы также можем раскрывать сведения, если этого требует закон, для ответа
+            на надлежащий юридический запрос, для защиты прав или безопасности, с
+            вашего согласия либо в рамках законной передачи бизнеса.
+          </p>
+          <p>
+            Политики поставщиков:
+            <a href="https://www.apple.com/legal/privacy/">Apple</a>,
+            <a href="https://policies.google.com/privacy">Google</a>,
+            <a href="https://unity.com/legal/privacy-policy">Unity</a> и
+            <a href="https://docs.github.com/site-policy/privacy-policies/github-general-privacy-statement">GitHub</a>.
+          </p>
+
+          <h2 id="ru-retention">5. Хранение и удаление</h2>
+          <ul>
+            <li>
+              Локальные игровые данные остаются на устройстве, пока они не будут
+              сброшены, очищены, удалены вместе с Игрой либо утрачены при смене или
+              сбросе устройства.
+            </li>
+            <li>
+              Сведения о праве на приобретённый контент сохраняются локально в
+              объёме, необходимом для предоставления покупки, и могут быть
+              восстановлены из магазина. Apple и Google хранят сведения о
+              транзакциях в соответствии со своими политиками.
+            </li>
+            <li>
+              Данные учётной записи платформы и резервных копий хранятся
+              соответствующим поставщиком согласно его политикам и вашим настройкам.
+            </li>
+            <li>
+              Общедоступные обращения в службу поддержки остаются на GitHub, пока
+              не будут удалены или иным образом обработаны в соответствии с
+              правилами хранения GitHub.
+            </li>
+          </ul>
+          <p>
+            Текущая версия не создаёт отдельную учётную запись Disaster Afterward
+            или серверный профиль игрока, который мы могли бы удалить. Чтобы удалить
+            локальные данные, воспользуйтесь функцией сброса в Игре, если она
+            доступна, очистите данные приложения средствами операционной системы
+            или удалите Игру. Удаление Игры не удаляет вашу учётную запись Apple
+            или Google, историю транзакций или резервные копии платформы; управляйте
+            ими через соответствующего поставщика.
+          </p>
+
+          <h2 id="ru-rights">6. Ваш выбор и права</h2>
+          <p>
+            В зависимости от места вашего проживания у вас могут быть права на
+            доступ, исправление, удаление или ограничение обработки персональных
+            данных; на возражение против определённой обработки; на получение данных
+            в переносимом формате; на отзыв согласия; или на обращение в надзорный
+            орган. Поскольку сейчас у нас нет базы игроков под управлением
+            разработчика, многие запросы относятся к сведениям, которые хранят
+            Apple, Google или GitHub, и должны быть направлены соответствующему
+            поставщику.
+          </p>
+          <p>
+            Чтобы задать вопрос о конфиденциальности или реализовать право в
+            отношении контролируемых нами сведений, используйте указанный ниже канал
+            связи. Нам может потребоваться достаточно информации для проверки и
+            ответа на запрос; в установленных законом случаях мы можем сохранить
+            ограниченный объём записей.
+          </p>
+
+          <h2 id="ru-security">7. Безопасность и международная обработка</h2>
+          <p>
+            Мы применяем разумные меры защиты, соответствующие характеру сведений и
+            связанному с ними риску. Ни один способ электронного хранения или
+            передачи не является полностью безопасным. Apple, Google, Unity и
+            GitHub могут обрабатывать сведения за пределами вашей страны или региона
+            в соответствии со своими политиками и применимыми гарантиями передачи.
+          </p>
+
+          <h2 id="ru-children">8. Конфиденциальность детей</h2>
+          <p>
+            Игра не предназначена преимущественно для детей, которые по законам
+            места своего проживания не могут дать согласие на обработку персональных
+            данных без разрешения родителей. Родитель или опекун, полагающий, что
+            ребёнок предоставил нам персональные данные без необходимого разрешения,
+            может связаться с нами, чтобы мы приняли надлежащие меры.
+          </p>
+
+          <h2 id="ru-changes">9. Изменения настоящей Политики</h2>
+          <p>
+            Мы можем обновлять настоящую Политику при изменении Игры, поставщиков
+            или требований законодательства. О существенных изменениях будет
+            сообщено на этом сайте, в Игре или по другому подходящему каналу. Дата
+            вступления в силу выше указывает текущую версию. Прежде чем включить
+            аналитику, рекламу, облачные сохранения или сервис учётных записей под
+            управлением разработчика, мы обновим настоящую Политику и соответствующие
+            сведения в магазинах приложений.
+          </p>
+
+          <h2 id="ru-contact">10. Контакты</h2>
+          <div class="contact-panel">
+            <p><strong>Издатель:</strong> JimmyLai1989</p>
+            <p>
+              <strong>Вопросы конфиденциальности и поддержка:</strong>
+              <a href="https://github.com/JimmyLai1989/disaster-afterward-legal/issues/new?title=Privacy%20or%20support%20request">Создать обращение на GitHub</a>
+            </p>
+            <p>
+              Обращения GitHub Issues общедоступны. Сообщайте только минимально
+              необходимые сведения и не включайте конфиденциальные персональные или
+              платёжные данные.
+            </p>
+          </div>
+        </article>
       </main>
     </div>
 
     <footer class="site-footer">
       <p>© 2026 JimmyLai1989. Disaster Afterward.</p>
-      <nav class="footer-links" aria-label="Footer navigation">
-        <a href="../" data-lang-link>Home</a>
-        <a href="../terms/" data-lang-link>Terms</a>
-        <a href="https://github.com/JimmyLai1989/disaster-afterward-legal/issues/new">Contact</a>
+      <nav class="footer-links" aria-label="Footer navigation" data-ui-aria-label="footerNav">
+        <a href="../" data-lang-link data-ui-label="home">Home</a>
+        <a href="../terms/" data-lang-link data-ui-label="terms">Terms</a>
+        <a href="https://github.com/JimmyLai1989/disaster-afterward-legal/issues/new" data-ui-label="contact">Contact</a>
       </nav>
     </footer>
 

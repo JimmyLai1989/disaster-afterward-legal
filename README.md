@@ -8,9 +8,10 @@ Official public legal pages for Disaster Afterward.
 - Privacy Policy: https://jimmylai1989.github.io/disaster-afterward-legal/privacy/
 - Terms of Use: https://jimmylai1989.github.io/disaster-afterward-legal/terms/
 
-The site is a static GitHub Pages project with English, Japanese, and Simplified
-Chinese content. It uses no external assets, cookies, local-storage tracking, or
-analytics scripts.
+The site is a static GitHub Pages project in the same ten languages supported by
+the game: English, Japanese, Simplified Chinese, Traditional Chinese, Korean,
+French, German, Spanish, Brazilian Portuguese, and Russian. It uses no external
+assets, cookies, local-storage tracking, or analytics scripts.
 
 ## GitHub Pages
 
