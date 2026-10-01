@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://jimmylai1989.github.io/disaster-afterward-legal/sitemap.xml
